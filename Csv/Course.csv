@@ -1,0 +1,314 @@
+Course ID,College ID,Name,Type,Description,Credits,Semester
+BIO101,IIITD,Foundations of Biology,BIO,"The objective of this course is to provide an introduction to the foundations of biology including the chemistry of life, cellular mechanisms, genetics and mechanisms of evolution.",4,Winter
+BIO211,IIITD,Cell Biology and Bio-Chemistry,BIO,"The aim of this basic core course is to provide students a decent background in cell biology and biochenmistry. The major focus is to a) cover most important concepts in cell biology like structure and functions of cell, proteins, and signal transduction mechanisms
+b) cover biological thermodynamics, enzyme kinetics and metabolism and finally c) solve qualitative and quantitative problems",2,Monsoon
+BIO213,IIITD,Introduction to Quantitative Biology,BIO,"This course will discuss some fundamental aspects of ecological, evolutionary, genetics, and epidemic models as studied by quantitative approaches. Simple mathematical and computational tools will be taken up to carry out quantitative analysis of biological systems. In addition, students will be introduced to MATLAB. Assignments and project work will include quantitative study and data analysis for biological processes (using MATLAB).",4,Winter
+BIO214,IIITD,Genetics and Molecular Biology,BIO,"The aim of this basic core course is to provide students a good background in genetics, molecular biology. The major focus is to acquaint students with quantitative aspect of different kind of genetic inheritance and horizontal transfers. The course is also to provide introduction about different aspect of molecular aspect of gene regulation.",4,Monsoon
+BIO221,IIITD,Practical Bioinformatics,BIO,"This objective of this course is to provide introduction to modern biology, data-oriented questions, and training in application of computational techniques for data analysis. Apart from providing conceptual understanding of important topics in bioinformatics, the focus is on hands-on training in implementation of techniques. Through combination of lectures, exercises, assignments and presentations, the student is expected to achieve practical understanding of bioinformatics techniques.",4,Winter
+BIO321,IIITD,Algorithms in Bioinformatics,BIO,"This course introduces undergraduates to the outstanding promise of applied algorithmics in the field of molecular biology and human health. The course aims to bridge the gap between algorithmic thinking and biological problem-solving. As part of this course, the students will be encouraged to design algorithms and apply on real biological datasets to gain fundamental insights into biological systems/diseases. The students will get an opportunity to deep dive into the vibrant realm of high throughput molecular biology through the lense of multi-omics data analysis.",4,Monsoon
+BIO361,IIITD,Biophysics,BIO,"This biophysics course shall delve into concepts of physics acting upon biomolecules, primarily proteins. From understanding protein folding to predicting 3-dimension structures from the 1-dimension sequence, the course shall involve assignments that shall give the students the neccessary knowledge to deal with structural problems.",4,Monsoon
+BIO506,IIITD,Stochastic Simulations in Systems Biology and Biophysics,BIO,"This course will introduce students to stochastic simulations as used in solving biological probelms. It will emphasize kinetic Monte Carlo simulations that are able to capture dynamical aspects (such as in cellular phenotype generation), complex details in biological problems (such as spatial heterogeneity) and fluctuation effects. We plan to discuss stochastic modeling of important cellular (as mediated by regulatory networks) and immunological processes and biomedical applications.",4,Monsoon
+BIO511,IIITD,Cell Biology and Bio-Chemistry,BIO,"The aim of this basic core course is to provide students a decent background in cell biology and biochenmistry. The major focus is to a) cover most important concepts in cell biology like structure and functions of cell, proteins, and signal transduction mechanisms
+b) cover biological thermodynamics, enzyme kinetics and metabolism and finally c) solve qualitative and quantitative problems.",4,Monsoon
+BIO512,IIITD,Foundations of Modern Biology,BIO,"The aim of this basic core course is to provide students a good background in genetics and molecular biology. The major focus is to a) cover most important concepts in genetics like Mendelian laws, linkage and recombination b) cover molecular mechanisms of gene expression and c) solve qualitative and quantitative problems in population and evolutionary genetics.",4,Monsoon
+BIO522,IIITD,Algorithms in Computational Biology,BIO,"This is an introductory course on algorithms for computational biology. The goal is to make students familiar with the
+basics of algorithm designing techniques and their application in solving problems of molecular biology. Students will be trained for developing their own algorithms for solving real life biological problems. Hands on training will be given for commonly used softwares for genomic data analysis.",4,Monsoon
+BIO523,IIITD,Chemoinformatics,BIO,"The objective of this course is to provide introduction to chemoinformatics, an interdisciplinary area on the interface of chemistry, informatics and biology. The student will be provided with understanding of fundamentals of chemoinformatics and its applications. Through lectures, hands-on exercises and assignments, the student is expected to achieve a good grasp of the concepts and applications of chemoinformatics.",4,Winter
+BIO531,IIITD,Introduction to Mathematical Biology,BIO,The aim of this course is to introduce mathematics as applied in quantitative study of biological systems and biological data analysis. Use of ordinary and partial differential equations (ODEs) will be emphasized in this course. Both exact and numerical solutions will be discussed. We also plan to briefly introduce dynamical systems analysis for ODEs.,4,Winter
+BIO532,IIITD,Network Biology,BIO,"The objective of this course is to provide introduction to network biology, an emerging interdisciplinary area which aims at graph theoretical modeling of biological complex systems and its applications. The student will be provided with conceptual understanding of complex networks and their application for modeling various biological systems. Through a combination of lectures, exercises, and assignments, the student is expected to achieve understanding of network biology.",4,Monsoon
+BIO533,IIITD,Systems and Synthetic Biology,BIO,This course introduces systems and synthetic biology to students with interest in applying mathematical techniques to biological problem. The main aim of this course is to train students to build mathematical models of complex biological systems and make predictions about the functions of the biological systems in-silico under various conditions. They will also learn conditions to build synthetic circuit in-silico to optimize its functions under various scenarios.,4,Winter
+BIO534,IIITD,Introduction to Computational Neuroscience,BIO,"This introductory neuroscience provides basic understanding of neuronal systems and their respective mathematical models that describes the behavior of the neurons under various conditions. The aim of this course is to encourage Computational biology students to diversify into the area of neuroscience. This course in not about neural networks and machine learning, but about the use of the tools of dynamical systems theory to undertand oscillatory properties of single cell neurons. Nonlinear ODE and PDE models will be constructed, analyzed and simulated using MATLAB to understand different firing patterns of the neuronal systems under normal and pathalogical conditions.",4,Winter
+BIO541,IIITD,Data Sciences for Genomics,BIO,"The field of Genomics is expanding its horizon with help of high throughput technologies. Scientist are trying to answer fundamental
+questions related to health, society and human survival outside earth using genomics. With such increase of applications, it constantly needs computational experts for systematic analysis of data and acheiving meaning full insights. Infact the computational experts have now started taking lead in genomic projects. Hence this course is meant to guide students for data analysis approach and steps involved in computational genomics and make them familiar with latest development in genomics.",4,Winter
+BIO542,IIITD,Machine Learning for Biomedical Applications,BIO,"This course is designed for students having wide range of background like biology, medical science, pharmacology, bioinformatics, computer science. This course is divided in following three sections; i) Major challenges in the field of biomedical science, ii) Introduction/implementation of machine learning techniques for developing prediction models, and iii) solving biomedical problems using machine learning techniques. This course will be help students in developing novel methods for solving real-life problems in the field of biological and health sciences. Attempt will made to bridge gap between students and world class researchers, studentds will be exposed to highly accurate methods based on machine learning techniques (research papers).",4,Monsoon
+BIO543,IIITD,Big Data Mining in Healthcare,BIO,"There is a exponential growth of data in the field of biological, medical and clinical scineces. Aim of this course is to taught implementation of data mining techniques in healthcare, to solve health-related problems. In this course, students will learn techniques for managing and mining big data. It will be broadly divided in four parts; first part will cover various repositories or databases in the field of medical and biological data. In second part, students will be introduced with techniques comonly used to analyze and manage big data. Implementation of techniques using Python will be covered in third phase of this course. Finally, students will learn how to solve health-related problems using knowldge based discovery approach.",4,Winter
+BIO544,IIITD,Computational Gastronomy,BIO,"This course is designed to provide an introduction to the emerging science of Computational Gastronomy, a blend of food, data science and computational techniques. Following are the specific objectives that the course aims to fulfil: (a) Introduction to the science of food; (b) Exposition to culinary data; (c) Analysis and visualization of culinary data (statistical analysis, text mining, natural language processing, machine learning);(d) Exposure to challenges and opportunities",4,Monsoon
+BIO545,IIITD,Biostatistics,BIO,The main aim of this elective course is to provide students a good background in Quantitative Biology and enabling them to implement various statistical methods in analyzing biological data and its visualization. The course will also provide basic introduction of applied biostatistics.,4,Winter
+BIO546,IIITD,Computing for Medicine,BIO,"This objective of this course is to train students in creation of computing solutions that are relevant to medicine. The course will pick timely and relevant topics in computing such as the building blocks of electronic health records, modeling and visualizing diseases, pathogen and human factors involved in spread and the ever increasing role of information management and computing in managing diseases.",4,Monsoon
+BIO561,IIITD,Computer Aided Drug Design,BIO,"This course teaches the principles and practice of dug discovery, molecular mechanics and biomolecular simulations with an emphasis on the practical skills needed to perform and interpret simulations of biological macromolecules. In addition, this course will also introduce Molecular Docking technique that is essential for Computational Drug Design.",4,Winter
+COM101,IIITD,Communication Skills,SSH,,4,Monsoon
+COM301A,IIITD,Technical Communication,SSH,,4,Monsoon
+CSE101,IIITD,Introduction to Programming,CSE,,4,Monsoon
+CSE102,IIITD,Data Structures & Algorithms,CSE,,4,Winter
+CSE112,IIITD,Computer Organization,CSE,,4,Winter
+CSE121,IIITD,Discrete Mathematics,CSE,,4,Monsoon
+CSE140,IIITD,Introduction to Intelligent Systems,CSE,,4,Winter
+CSE201,IIITD,Advanced Programming,CSE,,4,Monsoon
+CSE202,IIITD,Fundamentals of Database Management System,CSE,,4,Winter
+CSE222,IIITD,Algorithm Design and Analysis,CSE,,4,Winter
+CSE223,IIITD,Algorithm Design and Analysis,CSE,,4,Winter
+CSE231,IIITD,Operating Systems,CSE,,4,Monsoon
+CSE232,IIITD,Computer Networks,CSE,,4,Monsoon
+CSE233,IIITD,Network Administration,CSE,,4,Winter
+CSE301,IIITD,Compilers,CSE,,4,Monsoon
+CSE319,IIITD,Modern Algorithm Design,CSE,,4,Monsoon
+CSE320,IIITD,Advanced Algorithms,CSE,,4,Monsoon
+CSE322,IIITD,Theory of Computation,CSE,,4,Winter
+CSE333,IIITD,Computer Graphics,CSE,,4,Monsoon
+CSE342,IIITD,Statistical Machine Learning,CSE,,4,Winter
+CSE343,IIITD,Machine Learning,CSE,,4,Monsoon/Winter
+CSE344,IIITD,Computer Vision,CSE,,4,Winter
+CSE345,IIITD,Foundations of Computer Security,CSE,,4,Monsoon
+CSE350,IIITD,Network Security,CSE,,4,Monsoon
+CSE354,IIITD,Networks and System Security II,CSE,,4,Winter
+CSE421,IIITD,Complexity Theory,CSE,,4,Monsoon
+CSE441,IIITD,Advanced Biometrics,CSE,,4,Winter
+CSE501,IIITD,Designing Human Centered Systems,CSE,,4,Monsoon
+CSE502,IIITD,Foundations of Parallel Programming,CSE,,4,Winter
+CSE503,IIITD,Program Analysis,CSE,,4,Monsoon
+CSE504,IIITD,Decision Procedures,CSE,,4,Winter
+CSE506,IIITD,Data Mining,CSE,,4,Monsoon
+CSE507,IIITD,Database System Implementation,CSE,,4,Monsoon
+CSE508,IIITD,Information Retrieval,CSE,,4,Winter
+CSE511,IIITD,Computer Architecture,CSE,,4,Monsoon
+CSE515,IIITD,Bayesian Machine Learning,CSE,,4,Monsoon
+CSE516,IIITD,Theories of Deep Learning,CSE,,4,Winter
+CSE523,IIITD,Randomized Algorithms,CSE,,4,Monsoon
+CSE524,IIITD,Theory of Modern cryptography,CSE,,4,Monsoon
+CSE525,IIITD,Introduction to Graduate Algorithms,CSE,,4,Monsoon
+CSE528,IIITD,Introduction to Blockchain and Cryptocurrency,CSE,,4,Winter
+CSE529,IIITD,Approximation Algorithms,CSE,,4,Winter
+CSE530,IIITD,Distributed Systems Security,CSE,,4,Winter
+CSE531,IIITD,Multi-Agent Systems,CSE,,4,Monsoon/Winter
+CSE535,IIITD,Mobile Computing,CSE,,4,Monsoon
+CSE538,IIITD,Wireless Networks,CSE,,4,Winter
+CSE546,IIITD,Applied Cryptography,CSE,,4,Monsoon/Winter
+CSE552,IIITD,Security Engineering,CSE,,4,Monsoon/Winter
+CSE555,IIITD,Introduction to Spatial Computing,CSE,,4,Monsoon
+CSE556,IIITD,Natural Language Processing,CSE,,4,Monsoon
+CSE557,IIITD,Big Data Analytics,CSE,,4,Winter
+CSE558,IIITD,Data Science,CSE,,4,Monsoon
+CSE559,IIITD,Mining Large Networks,CSE,,4,Winter
+CSE560,IIITD,GPU Computing,CSE,,4,Winter
+CSE561,IIITD,Probabilistic Graphical Models,CSE,,4,Winter
+CSE562,IIITD,Advanced Computer Vision,CSE,,4,Monsoon
+CSE563,IIITD,Multimedia Computing and Applications,CSE,,4,Winter
+CSE564,IIITD,Reinforcement Learning,CSE,,4,Monsoon
+CSE565,IIITD,Software Defined Networking,CSE,,4,Monsoon
+CSE566,IIITD,Mobile and Middleware Systems,CSE,,4,Monsoon
+CSE570,IIITD,Virtual Reality,CSE,,4,Winter
+CSE571,IIITD,Introduction to Media Computing,CSE,,4,Monsoon/Winter
+CSE576,IIITD,Smart Sensing for Internet of Things (IoT),CSE,,4,Monsoon
+CSE577,IIITD,Advanced Internet of Things,CSE,,4,Winter
+CSE580A,IIITD,Ontology Modeling,CSE,,4,Monsoon/Winter
+CSE581,IIITD,"Systems Analysis, Design and Requirements Engineering",CSE,,4,Winter
+CSE582,IIITD,Software Production Evolution and Maintenance,CSE,,4,Monsoon
+CSE583,IIITD,Software Development using Open Source,CSE,,4,Monsoon
+CSE584,IIITD,Program Verification,CSE,,4,Monsoon
+CSE5GP,IIITD,Geometry Processing,CSE,,4,Monsoon/Winter
+CSE600A,IIITD,Object Oriented Programming and Design,CSE,,4,Monsoon
+CSE605A,IIITD,Knowledge Graphs in Practice,CSE,,4,Monsoon
+CSE606,IIITD,Data Warehouse,CSE,,4,Winter
+CSE606A,IIITD,Data Lifecycle Management,CSE,,4,Monsoon
+CSE609,IIITD,Statistical Computation,CSE,,4,Winter
+CSE622,IIITD,Introduction to Quantum Computing,CSE,,4,Winter
+CSE631,IIITD,Advanced Operating Systems,CSE,,4,Winter
+CSE632,IIITD,Semantic Web,CSE,,4,Winter
+CSE633,IIITD,Robotics,CSE,,4,Winter
+CSE633A,IIITD,Social Robotics,CSE,,4,Winter
+CSE634,IIITD,Parallel Runtimes for Modern Processors,CSE,,4,Monsoon
+CSE636,IIITD,Communication Networks,CSE,,4,Winter
+CSE640,IIITD,Collaborative Filtering,CSE,,4,Monsoon
+CSE641,IIITD,Deep Learning,CSE,,4,Winter
+CSE642,IIITD,Advanced Machine Learning,CSE,,4,Monsoon
+CSE643,IIITD,Artificial Intelligence,CSE,,4,Monsoon
+CSE645,IIITD,Privacy and Security in Online Social Media,CSE,,4,Winter
+CSE651,IIITD,Topics in Adaptive Cybersecurity,CSE,,4,Monsoon
+CSE655,IIITD,Network Science,CSE,,4,Winter
+CSE656,IIITD,Information Integration and Applications,CSE,,4,Monsoon
+CSE660,IIITD,Trustworthy AI systems,CSE,,4,Winter
+CSE661,IIITD,Affective Computing,CSE,,4,Monsoon
+CSE662A,IIITD,Special Topics in Computer Vision,CSE,,4,Winter
+CSE663,IIITD,Edge AI,CSE,,4,Winter
+CSE663A,IIITD,Meta-Learning,CSE,,4,Winter
+CSE694F,IIITD,Multimedia Security,CSE,,4,Winter
+CSE734,IIITD,Advanced Topics in Mobile Computing,CSE,,4,Winter
+CSE749,IIITD,Network Anonymity and Privacy,CSE,,4,Monsoon
+CSE793A,IIITD,Topics in Cryptanalysis,CSE,,4,Winter
+DES101,IIITD,Design Drawing & Visualization,DES,,4,Winter
+DES102,IIITD,Introduction to HCI,DES,,4,Winter
+DES130,IIITD,Prototyping Interactive Systems,DES,,4,Monsoon
+DES201,IIITD,Design Processes and Perspectives,DES,,4,Monsoon
+DES202,IIITD,Visual Design & Communication,DES,,4,Monsoon
+DES204,IIITD,Human Computer Interaction,DES,,4,Winter
+DES302,IIITD,Animation and Graphics,DES,,4,Winter
+DES303,IIITD,Film Making and Radio Podcasting,DES,,4,Monsoon
+DES501,IIITD,Fundamentals of Audio for Engineers,DES,,4,Monsoon
+DES502,IIITD,Introduction to 2D Animation,DES,,4,Winter
+DES503,IIITD,Introduction to 3D Character Animation,DES,,4,Winter
+DES504,IIITD,Narratives in Visual Communication,DES,,4,Winter
+DES506,IIITD,Advanced topics in Human Centered Computing (ATHCC),DES,,4,Winter
+DES507,IIITD,Fundamentals of Video for Engineers,DES,,4,Winter
+DES512,IIITD,Game Design and Development,DES,,4,Winter
+DES513,IIITD,"Wearable Applications, Research, Devices, Interactions",DES,,4,Monsoon
+DES514,IIITD,Digital Audio,DES,,4,Monsoon
+DES515,IIITD,Information Systems in Public Health,DES,,4,Monsoon
+DES516,IIITD,Introduction to 3D Production Design for Animation and Games,DES,,4,Monsoon
+DES516s,IIITD,Introduction to 3D Animation,DES,,4,Winter
+DES518,IIITD,Introduction to Motion Graphics,DES,,4,Monsoon
+DES519,IIITD,Design of Interactive Systems,DES,,4,Monsoon
+DES520,IIITD,Human Centred AI,DES,,4,Monsoon
+ECE111,IIITD,Digital Circuits,ECE,,4,Monsoon
+ECE113,IIITD,Basic Electronics,ECE,,4,Winter
+ECE214,IIITD,Integrated Electronics,ECE,,4,Winter
+ECE215,IIITD,Circuit Theory and Devices,ECE,,4,Monsoon
+ECE230,IIITD,Fields and Waves,ECE,,4,Winter
+ECE240,IIITD,Principles of Communication Systems,ECE,,4,Winter
+ECE250,IIITD,Signals and Systems,ECE,,4,Monsoon
+ECE270,IIITD,Embedded Logic Design,ECE,,4,Monsoon
+ECE314,IIITD,Digital VLSI Design,ECE,,4,Monsoon
+ECE315,IIITD,Analog CMOS Circuit Design,ECE,,4,Monsoon
+ECE318,IIITD,Solid State Devices,ECE,,4,Monsoon
+ECE321,IIITD,RF Circuit Design,ECE,,4,Winter
+ECE340,IIITD,Digital Communication Systems,ECE,,4,Monsoon
+ECE343,IIITD,Mobile Communications,ECE,,4,Winter
+ECE350,IIITD,Digital Image Processing,ECE,,4,Monsoon
+ECE351,IIITD,Digital Signal Processing,ECE,,4,Monsoon
+ECE431,IIITD,Antennas Theory and Design,ECE,,4,Monsoon
+ECE432,IIITD,Radar Systems,ECE,,4,Winter
+ECE452,IIITD,Statistical Signal Processing,ECE,,4,Winter
+ECE501,IIITD,Probability and Random Process,ECE,,4,Monsoon
+ECE510,IIITD,Digital Hardware Design,ECE,,4,Monsoon
+ECE513,IIITD,VLSI Design Flow,ECE,,4,Monsoon
+ECE516,IIITD,System on Chip Design and Test,ECE,,4,Monsoon
+ECE517,IIITD,Introduction to Nanoelectronics,ECE,,4,Winter
+ECE519,IIITD,Intelligent Applications Implementation on Heterogeneous Platforms,ECE,,4,Monsoon
+ECE520,IIITD,Low Voltage Analog Circuit Design,ECE,,4,Monsoon
+ECE522,IIITD,Integrated Circuit Fabrication,ECE,,4,Monsoon
+ECE532,IIITD,Next Generation Optical Networks,ECE,,4,Winter
+ECE533,IIITD,Satellite Navigation and Sensor Fusion,ECE,,4,Monsoon
+ECE534,IIITD,Optical Communications Systems,ECE,,4,Winter
+ECE536,IIITD,Optical Networking,ECE,,4,Summer
+ECE537,IIITD,Wireless Communication Evolution from 3G to 5G,ECE,,4,Winter
+ECE539,IIITD,Wireless System Implementation,ECE,,4,Winter
+ECE543,IIITD,Principals of Digital Communication System,ECE,,4,Monsoon
+ECE545,IIITD,Photonics: Fundamentals & Applications,ECE,,4,Monsoon
+ECE554,IIITD,Compressive Sensing,ECE,,4,Monsoon
+ECE557,IIITD,Speech Recognition and Understanding,ECE,,4,Winter
+ECE558,IIITD,Transform Learning and Applications,ECE,,4,Winter
+ECE559,IIITD,Modeling and Analysis of Random 5G Networks,ECE,,4,Winter
+ECE570,IIITD,Control Theory,ECE,,4,Monsoon
+ECE571,IIITD,Optimal Control Systems,ECE,,4,Winter
+ECE573,IIITD,Advanced Embedded Logic Design,ECE,,4,Winter
+ECE577,IIITD,Machine Learning Techniques for Real-time Control,ECE,,4,Winter
+ECE579,IIITD,Nonlinear and Adaptive Control of Robotic Systems,ECE,,4,Monsoon
+ECE581,IIITD,Autonomous Driving,ECE,,4,Winter
+ECE611,IIITD,Memory Design and Testing,ECE,,4,Winter
+ECE612,IIITD,Mixed Signal Design,ECE,,4,Winter
+ECE672,IIITD,Stochastic Estimation and Control,ECE,,4,Winter
+ECO101,IIITD,Microeconomics,SSH,,4,Winter
+ECO201,IIITD,Macroeconomics,SSH,,4,Monsoon
+ECO223,IIITD,Money and Banking,SSH,,4,Winter
+ECO301,IIITD,Introduction to Economic Analysis,SSH,,4,Monsoon/Winter
+ECO311,IIITD,Game Theory,SSH,,4,Monsoon
+ECO312,IIITD,Industrial Organization,SSH,,4,Winter
+ECO313,IIITD,Market Design,SSH,,4,Winter
+ECO314,IIITD,Behavioural Economics,SSH,,4,Monsoon
+ECO221,IIITD,Econometrics I,SSH,,4,Monsoon
+ECO322,IIITD,Econometrics II,SSH,,4,Monsoon
+ECO324,IIITD,Spatial Statistics and Spatial Econometrics,SSH,,4,Winter
+ECO331,IIITD,Foundations of Finance,SSH,,4,Monsoon
+ECO332,IIITD,Valuation and Portfolio Management,SSH,,4,Winter
+ECO333,IIITD,Derivatives and Risk Management,SSH,,4,Monsoon
+ECO503,IIITD,Decision Theory,SSH,,4,Monsoon
+ENG599,IIITD,Research Methods,SSH,,4,Winter
+ENT411,IIITD,Entrepreneurial Communication,SSH,,4,Monsoon
+ENT412,IIITD,Entrepreneurial Khichadi,SSH,,4,Monsoon
+ENT413,IIITD,Entrepreneurial Finance,SSH,,4,Winter
+ENT414,IIITD,Relevance of Intellectual Property for Startups,SSH,,4,Winter
+ENT415,IIITD,New Venture Planning,SSH,,4,Monsoon
+ENT416,IIITD,"Creativity, Innovation, and Inventive Problem Solving",SSH,,4,Monsoon
+ENT421,IIITD,Healthcare Innovation and Entrepreneurship Essentials,SSH,,4,Monsoon
+ESC205,IIITD,Environmental Sciences,SSH,,4,Monsoon
+ESC207A,IIITD,"Ecology, Evolution, and Environment",SSH,,4,Winter
+MGT310,IIITD,Effective Supply Chain for E Commerce,SSH,,4,Monsoon
+MGT311,IIITD,Emerging Issues in IT Management,SSH,,4,Winter
+MTH100,IIITD,Linear Algebra,MTH,,4,Monsoon
+MTH201,IIITD,Probability and Statistics,MTH,,4,Winter
+MTH203,IIITD,Multivariate Calculus,MTH,,4,Monsoon
+MTH204,IIITD,Differential Equations,MTH,,4,Monsoon
+MTH210,IIITD,Discrete Structures,MTH,,4,Winter
+MTH211,IIITD,Number Theory,MTH,,4,Monsoon
+MTH212,IIITD,Abstract Algebra I,MTH,,4,Monsoon/Winter
+MTH240,IIITD,Real Analysis I,MTH,,4,Winter
+MTH270,IIITD,Numerical Methods,MTH,,4,Monsoon
+MTH300,IIITD,Introduction to Mathematical Logic,MTH,,4,Winter
+MTH302,IIITD,Algebra,MTH,,4,Winter
+MTH310,IIITD,Graph Theory,MTH,,4,Monsoon
+MTH311,IIITD,Combinatorics and its Applications,MTH,,4,Winter
+MTH340,IIITD,Real Analysis-II,MTH,,4,Monsoon
+MTH343,IIITD,Introduction to Dynamical Systems,MTH,,4,Winter
+MTH371,IIITD,Stochastic Processes and Applications,MTH,,4,Monsoon
+MTH372,IIITD,Statistical Inference,MTH,,4,Winter
+MTH373,IIITD,Scientific Computing,MTH,,4,Monsoon
+MTH374,IIITD,Linear Optimization,MTH,,4,Winter
+MTH375,IIITD,Fluid Mechainics,MTH,,4,Monsoon
+MTH510,IIITD,Advanced Linear Algebra,MTH,,4,Winter
+MTH512,IIITD,Algebraic Number Theory,MTH,,4,Winter
+MTH513,IIITD,Abstract Algebra II,MTH,,4,Winter
+MTH514,IIITD,Coding Theory,MTH,,4,Winter
+MTH516,IIITD,Analytic Number Theory,MTH,,4,Monsoon
+MTH517,IIITD,Combinatorial Optimization,MTH,,4,Winter
+MTH518,IIITD,Topics in Number Theory,MTH,,4,Monsoon
+MTH535,IIITD,Measure and Probability Theory,MTH,,4,Winter
+MTH541,IIITD,Complex Analysis,MTH,,4,Winter
+MTH542,IIITD,Introduction to Functional Analysis,MTH,,4,Monsoon
+MTH544,IIITD,Calculus in R^N,MTH,,4,Winter
+MTH545,IIITD,Finite and Spectral Element Methods,MTH,,4,Monsoon
+MTH550,IIITD,Introduction to PDE,MTH,,4,Monsoon
+MTH562,IIITD,Point Set Toplogy,MTH,,4,Monsoon
+MTH562A,IIITD,Point Set Toplogy,MTH,,4,Winter
+MTH564A,IIITD,Introduction to Riemannian Geometry with Some Applications,MTH,,4,Winter
+MTH570,IIITD,Numerical Solutions Differential Equations,MTH,,4,Monsoon
+MTH571,IIITD,Integral Transforms and their Applications,MTH,,4,Winter
+MTH576,IIITD,Categorical Data Analysis,MTH,,4,Winter
+MTH577,IIITD,Convex Optimization,MTH,,4,Winter
+MTH598,IIITD,Numerical Partial Differential Equations,MTH,,4,Monsoon
+MTH599,IIITD,Variational Calculus and their Applications,MTH,,4,Winter
+PSY201,IIITD,Introduction to Psychology,SSH,,4,Winter
+PSY202,IIITD,Positive Psychology,SSH,,4,Winter
+PSY301,IIITD,Cognitive Psychology,SSH,,4,Winter
+PSY302,IIITD,Social Psychology,SSH,,4,Winter
+PSY305,IIITD,Attention and Perception,SSH,,4,Monsoon
+PSY306,IIITD,Learning and Memory,SSH,,4,Monsoon
+PSY307,IIITD,Neuroscience of Decision Making,SSH,,4,Winter
+PSY308,IIITD,Cognition of Motor Movement,SSH,,4,Monsoon
+SOC101,IIITD,Introduction to Sociology and Anthropology,SSH,,4,Monsoon
+SOC202,IIITD,Contemporary India: Sociological Perspective,SSH,,4,Winter
+SOC204,IIITD,Sociology of New Media,SSH,,4,Monsoon
+SOC205,IIITD,Anthropology and Social Media,SSH,,4,Winter
+SOC206,IIITD,Business Anthropology,SSH,,4,Winter
+SOC207,IIITD,Information Technology And Society,SSH,,4,Monsoon
+SOC208,IIITD,Organizations An Anthropological Perspective,SSH,,4,Winter
+SOC209,IIITD,Consumer Culture and Society,SSH,,4,Winter
+SOC210,IIITD,Sociological Theory,SSH,,4,Monsoon
+SOC211,IIITD,"Science, Technology and Society",SSH,,4,Winter
+SOC212,IIITD,Key Concepts in Economic Sociology,SSH,,4,Monsoon
+SOC302,IIITD,Urban Sociology,SSH,,4,Monsoon
+SOC307,IIITD,Digital Social Research,SSH,,4,Monsoon
+SOC308,IIITD,Gender and Media,SSH,,4,Winter
+SOC311,IIITD,Advance Ethnographic Research Methods,SSH,,4,Winter
+SOC312,IIITD,Advanced Sociological Theory,SSH,,4,Winter
+SOC313,IIITD,Sociology of India: Themes and Perspectives,SSH,,4,Monsoon
+SSH101,IIITD,Critical Thinking and Readings in Social Science,SSH,,4,Winter
+SSH121,IIITD,Introduction to Philosophy,SSH,,4,Monsoon
+SSH124,IIITD,Critical Thinking,SSH,,4,Monsoon
+SSH201,IIITD,Research Methods in Social Science and Design,SSH,,4,Winter
+SSH211,IIITD,Theatre Appreciation,SSH,,4,Winter
+SSH214,IIITD,Introduction To The Study Of Literature,SSH,,4,Monsoon
+SSH215,IIITD,Nation and her Narratives,SSH,,4,Winter
+SSH216,IIITD,Introduction to Indian Mythology,SSH,,4,Monsoon
+SSH217,IIITD,Indian Poetry Through the Ages,SSH,,4,Winter
+SSH221,IIITD,Social and Political Philosophy,SSH,,4,Monsoon
+SSH222,IIITD,Theory and Practice of Engineering Ethics,SSH,,4,Winter
+SSH223,IIITD,Perspectives of Knowledge,SSH,,4,Winter
+SSH224,IIITD,"Computer, Information Ethics and Society",SSH,,4,Monsoon
+SSH261,IIITD,Democracy in India: Principles and Practices,SSH,,4,Winter
+SSH300,IIITD,Theories of Ethics,SSH,,4,Winter
+SSH311,IIITD,Advanced Writing,SSH,,4,Monsoon
+SSH321,IIITD,Applied Ethics,SSH,,4,Winter
+SSH323,IIITD,New Media and Politics,SSH,,4,Winter
+SSH324,IIITD,Philosophy of Mind,SSH,,4,
+SSH361,IIITD,Comparative Politics in Digital Era,SSH,,4,
+SSH362,IIITD,Urban Space and Political Power,SSH,,4,Monsoon/Winter
+SSH3PT,IIITD,Philosophy of Technology,SSH,,4,Winter
