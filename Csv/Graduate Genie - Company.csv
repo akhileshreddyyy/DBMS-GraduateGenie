@@ -1,0 +1,24 @@
+Company ID,Name,Type,Description,Password,"Building,Street,Area",City,State,Country,Email ID
+GS,Goldman Sachs,Tech,Looking for SDA,GSpassword,150 Outer Ring Road,Bengaluru,Karnataka,India,goldmansachs@gs.com
+MS,Microsoft,Tech,Looking for SDA,MSpassword,"Express Trade Tower, 1, 1A, Slip Rd, Film City, Sector 16A, Noida,201301",Noida,Uttar Pradesh,India,microsoft@ms.com
+ADOBE,Adobe,Tech,SD needed,ADOBEpassword,"Vindhyachal Marg, Town Centre, Sector 25A, Noida 201301",Noida,Uttar Pradesh,India,adobe@adobe.com
+AMAZON,Amazon,Tech,Looking for SDA,AMAZONpassword,"Hyderabad Q-city, 2nd Floor-Block A & Block B Survey Number-109,110,111/2",Hyderabad,Telangana,India,amazon@amazon.com
+FB,Facebook,Tech,Looking for SDA,FBpassword,"Unit Nos. 1203 and 1204, Level 12, Building No. 20, Raheja Mindspace, Cyberabad, Madhapur, Hitech City Hyderabad",Hyderabad,Telangana,India,facebook@facebook.com
+CN,Codenation,Tech,Looking for analyst,CNpassword,A-46 Cyber City,Guragon,Haryana,India,cn@codenation.com
+GOOGLE,Google,Tech,SD needed,GOOGLEpassword,"600 Amphitheatre Pkwy, Mountain View",San Jose,California,United States of America,google@google.com
+MSTANLEY,Morgan Stanley,Tech,Analyst required,MSTANLEYpassword,B12 Gurgaon Cyber Hub,Guragon,Haryana,India,ms@morganstanley.com
+TOWER,Tower Research,Tech,Associate required,TOWERpassword,"A,B Tech City ",Bengaluru,Karnataka,India,ts@towereasearch.com
+BENZ,Mercedes Benz,Tech,Developer required,BENZpassword,"7/8 TechHub, new city",Amravati,Andhra Pradesh,India,ben@mb.com
+MYNTRA,Myntra,Tech,Front/Back End developer required,MYNTRApassword,"Shop Zone 14,Outer ring road",Mumbai,Maharashtra,India,myntra@myntra.com
+FLIPKART,Flipkart,Tech,Intern positions available,FLIPKARTpassword,"Commerce Zone Tower, 7,Inner ring",Pune,Mahrashtra,India,info.flipkart@flipkart.com
+XEROX,Xerox Corporation,Tech,SD needed,XEROXpassword,C-167 Sector 14,Noida,Uttar Pradesh,India,info@xerox.com
+QCOMM,Qualcomm,Tech,Intern positions available,QCOMMpassword,"33/34 TechHub, new city",Amravati,Andhra Pradesh,India,qcomm@qcomm.com
+ZOMATO,Zomato,Tech,Front/Back End developer required,ZOMATOpassword,C-12 Cyber City,Guragon,Haryana,India,contact@zomato.com
+SWIGGY,Swiggy,Tech,Front/Back End developer required,SWIGGYpassword,QCity -125,Hyderabad,Telangana,India,information@swiggy.com
+CNINJA,Coding Ninjas,Tech,SD needed,CNINJApassword,"QCity -84,85",Hyderabad,Telangana,India,codingninja@cn.com
+CBLOCKS,Coding Blocks,Tech,Analyst required,CBLOCKSpassword,"150 Tech City, Outer Ring ",Bengaluru,Karnataka,India,information@codingblocks.com
+ORACLE,Oracle,Tech,Looking for SDA,ORACLEpassword,"Trade Center,Sector 125",Bengaluru,Karnataka,India,info@oracle.com
+TCS,Tata Consultancy Service,Tech,Intern positions available,TCSpassword,"18 Mojo Trade, Film Road",Bengaluru,Karnataka,India,tcs@tcs.com
+DELL,Dell Incorporation ,Tech,Intern positions available,DELLpassword,"13 Trade Complex, sector 18,noida",Noida,Uttar Pradesh,India,contact@dell.com
+WMART,Wallmart,Tech,Looking for SDA,WMARTpassword,"15 Trade Complex, sector 18,noida",Noida,Uttar Pradesh,India,wmart@wallmart.com
+PAYTM,Paytm,Tech,Analyst required,PAYYMpassword,"21 Mojo Trade, Film Road",Bengaluru,Karnataka,India,contact@paytm.com

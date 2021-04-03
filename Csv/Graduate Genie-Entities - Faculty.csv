@@ -1,0 +1,34 @@
+Faculty ID,College ID,First_Name,Last_Name,House_No.,"Building,Street,Area",City,State,Country,DOB,Gender,Qualification,Specialization,Position,Experience,Email ID,Password
+IIITD001,IIITD,Sara,Gade,74,"Naina Heights, TaahidGunj",Udaipur,Rajasthan,India,1976-10-25,F,"M.Tech, PhD",Computer Graphics and Geometry,Asst. Prof.,3,sara@iiitd.ac.in,pwdiiitd0001
+IIITD002,IIITD,Jamshed,Chawla,29,Amrita Nagar,Rajkot,Gujarat,India,1965-06-13,M,"M.Tech, PhD",Image Analysis and Biometrics,Prof.,7,jamshed@iiitd.ac.in,pwdiiitd0002
+IIITD003,IIITD,Radheshyam ,Pratap Natt,40,Dadar,Ludhiana,Punjab,India,1990-08-02,M,"M.Sc, PhD",Mobile and Ubiquitous Computing,Asst. Prof.,2,radheshyam@iiitd.ac.in,pwdiiitd0003
+IIITD004,IIITD,Rachel,Dixit,57,Kalyan Chowk,Patna,Bihar,India,1989-12-04,F,"M.Tech, PhD",Software Engineering & Programming Languages,Asst. Prof.,5,rachel@iiitd.ac.in,pwdiiitd0004
+IIITD005,IIITD,Umesh,Menon,56,"Nikita Villas, Yeshwanthpura",Jabalpur,Punjab,India,1966-07-09,M,"M.Tech, PhD",Wireless Systems,Asst. Prof.,1,umesh@iiitd.ac.in,pwdiiitd0005
+IIITD006,IIITD,Kailash ,Aayushman Venkatesh,85,"Uday Apartments, Aadish Chowk",Pilani,Rajashthan,India,1978-06-25,M,"M.Tech, PhD",Advanced Electronic Systems,Prof.,5,kailash@iiitd.ac.in,pwdiiitd0006
+IIITD007,IIITD,Chitranjan,Prasad Tella,55,Kartikgunj,Dehradun,Uttarakhand,India,1971-09-28,M,"M.Tech, PhD",Information Security and Privacy,Asst. Prof.,3,chitranjan@iiitd.ac.in,pwdiiitd0007
+IIITD008,IIITD,Munni,Somani,55,Kalyangarh,Alwar,Rajashthan,India,1989-06-27,F,"M.Tech, PhD",Information Management and Data Analytics,Asst. Prof.,2,munni@iiitd.ac.in,pwdiiitd0008
+IIITD009,IIITD,Niyati,Batta,81,Marathahalli,Gangtok,Sikkim,India,1974-10-06,F,"M.Sc, PhD",Theoretical Computer Science,Prof.,9,niyati@iiitd.ac.in,pwdiiitd0009
+IIITD010,IIITD,Bharat,Lad,91,Indra Nagar,Pilani,Rajasthan,India,1976-01-09,M,"M.Tech, PhD",Computational and Systems Biology,Prof.,6,bharat@iiitd.ac.in,pwdiiitd0010
+IIITD011,IIITD,Jawahar,Lal Mehrotra,30,"Akhil Heights, Leelawatigarh",New Delhi,Delhi,India,1965-02-12,M,"M.Tech, PhD",GeoInformatics,Asst. Prof.,4,jawahar@iiitd.ac.in,pwdiiitd0011
+IIITD012,IIITD,Leelawati,Mukul Memon,21,Kormangla,Patna,Bihar,India,1977-12-03,F,"M.Tech, PhD",Signal Processing,Asst. Prof.,1,leelawati@iiitd.ac.in,pwdiiitd0012
+IIITD013,IIITD,Harbhajan,Singh Tiwari,69,Harmada,Jabalpur,Punjab,India,1977-12-15,M,"M.Tech, PhD",Scalable Systems,Prof.,7,harbhajan@iiitd.ac.in,pwdiiitd0013
+IIITD014,IIITD,Nilam,Chaudhari,26,Nayan Chowk,Hisar,Haryana,India,1969-07-27,F,"M.Tech, PhD","Algebra, Number Theory, Combinatorics, Algebraic Coding Theory",Prof.,8,nilam@iiitd.ac.in,pwdiiitd0014
+NSUT001,NSUT,Jagruti,Kalyan Kulkarni,49,Virar,Mumbai,Maharashtra,India,1978-12-16,F,"M.Tech, PhD","Computational Mathematics, Scientific computing, PDEs, Numerical solutions of ODEs and PDEs, Mathematical Biology",Asst. Prof.,5,jagruti@nsut.com,pwdnsut0001
+NSUT002,NSUT,Nilima,Naval Keer,49,"Rahim Villas, Shantigunj",Trichy,Tamil Nadu,India,1979-04-06,F,"M.Sc, PhD",Economics,Prof.,10,nilima@nsut.com,pwdnsut0002
+NSUT003,NSUT,Kusum,Talwar,89,Charlie Chowk,Ratlam,Madhya Pradesh,India,1979-06-11,F,"M.Tech, PhD","Mobile, Networks, Wireless and Optical Communication, Cognitive Radio, MIMO, RF Energy harvesting",Asst. Prof.,4,kusum@nsut.com,pwdnsut0003
+NSUT004,NSUT,Arpit,Narayanan,54,"Tanuja Villas, Dadar",Bhubaneshwar,Odisha,India,1980-06-22,M,"M.Sc, PhD","Ergodic Theory, Dynamical Systems",Prof.,9,arpit@nsut.com,pwdnsut0004
+NSUT005,NSUT,Kajol,Parikh,13,"Aastha Heights, Laveenagarh",Bengaluru,Karnataka,India,1981-11-26,F,"M.Sc, PhD","Mathematical Logic, Foundations of Mathematics",Asst. Prof.,2,kajol@nsut.com,pwdnsut0005
+NSUT006,NSUT,Padmini,Darpan Gobin,54,"Mahmood Society, Rajagarh",Rajkot,Rajasthan,India,1985-03-10,F,"M.Tech, PhD","Circuits and Systems, VLSI, FPGA, CGRA",Asst. Prof.,7,padmini@nsut.com,pwdnsut0006
+NSUT007,NSUT,Jasmin,Chand,56,"Chandni Villas, Raghavangarh",Bhopal,Madhya Pradesh,India,1965-10-11,F,"M.Tech, PhD","Embedded Systems, Robotics, Cyber-physical Systems, Distributed Systems",Prof.,17,jasmin@nsut.com,pwdnsut0007
+NSUT008,NSUT,Venkat,Mann,11,Payal Gunj,Ranchi,Jharkhand,India,1989-11-04,M,"M.Sc, PhD",Statistics,Asst. Prof.,5,venkat@nsut.com,pwdnsut0008
+NSUT009,NSUT,Gowri,Inani,27,Andheri,Thiruvananthapuram,Kerala,India,1973-11-25,F,"M.Tech, PhD","Machine Learning, Artificial Intelligence, Pattern Recognition, Complex Systems, Recommender Systems",Prof.,20,gowri@nsut.com,pwdnsut0009
+NSUT010,NSUT,Aabha,Kade,91,Nutan Pur,Jaipur,Rajasthan,India,1990-06-13,F,"M.Tech, PhD","Image Processing, Computer Vision, Computer Graphics, Graphical models, Statistical Methods",Asst. Prof.,1,aabha@nsut.com,pwdnsut0010
+NSUT011,NSUT,Darpan,Rao Kashyap,56,"Diya Heights, Namita Nagar",Nashik,Maharashtra,India,1965-09-08,M,"M.Tech, PhD","Security, Privacy, Cryptography",Asst. Prof.,3,darpan@nsut.com,pwdnsut0011
+DTU001,DTU,Aves ,Raj,A52,"Apex Colony,GK-1",Delhi,Delhi,India,1979-06-19,M,M.Tech,"Machine Learning, Artificial Intelligence, Pattern Recognition, Complex Systems, Recommender Systems",Prof.,20,aves001@dtu.com,password
+LPU001,LPU,Rajesh,Ranjab,45B,Ajay Chowk,Bhubaneshwar,Odisha,India,1985-10-24,M,M.Tech,"Mobile, Networks, Wireless and Optical Communication, Cognitive Radio, MIMO, RF Energy harvesting",Asst. Prof.,10,Rajesh001@lpu.com,password
+AMITYN001,AMITYN,Surekha,Singh Tiwari,37g,"Ashian Apartment, sector-7,noida",Noida,Uttar Pradesh,India,1956-07-08,F,"M.Tech,PhD",Information Security and Privacy,Prof.,43,Surekha001@amityn.com,password
+AMITYG001,AMITYG,Laxmi,Kapoor,80,Shankar society Okhla-3,Delhi,Delhi,India,1964-11-25,F,M.Tech,"Mobile, Networks, Wireless and Optical Communication, Cognitive Radio, MIMO, RF Energy harvesting",Prof.,27,Laxmi001@amityg.com,password
+THAPAR001,THAPAR,Prasad,Jai,53,A1 Complex,Pune,Maharashtra,India,1988-03-02,M,M.Tech,"Machine Learning, Artificial Intelligence, Pattern Recognition, Complex Systems, Recommender Systems",Asst. Prof.,9,Prasad001@thapar.com,password
+PEC001,PEC,Shankar,Gupta,35-C,"Nayan Palace, Chand Chowk",Patna,Bihar,India,1967-12-08,M,"M.Tech, PhD",Software Engineering & Programming Languages,Prof.,42,Shankar001@pec.com,password
+IITD001,IITD,Jai,Agarwal,29,"Ashoka Niketan, Anand Vihar",Delhi,Delhi,India,1972-12-22,M,"M.Tech, PhD","Machine Learning, Artificial Intelligence, Pattern Recognition, Complex Systems, Recommender Systems",Prof.,25,Jai001@iitd.com,password
+SNU001,SNU,Ayush,Mishra,A-16,Gokuldham Society,Mumbai,Maharashtra,India,1957-04-17,M,M.Tech,Information Security and Privacy,Prof.,46,Ayush001@snu.com,password

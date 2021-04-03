@@ -1,0 +1,17 @@
+Department_name,College_ID,Members,Email,HOD ID
+Computer Science and Engineering,IIITD,20,infocse@iiitd.ac.in,IIITD001
+Computer Science and Mathematics,IIITD,12,infocsam@iiitd.ac.in,IIITD004
+Computer Science and Biology,IIITD,7,infocsb@iiitd.ac.in,IIITD007
+Computer Science and Design,IIITD,8,infocsd@iiitd.ac.in,IIITD008
+Computer Science and Artificial Intelligence,IIITD,5,infocsai@iiitd.ac.in,IIITD009
+Computer Science and Social Sciences,IIITD,5,infocsss@iiitd.ac.in,IIITD012
+Electronics and Communication,IIITD,28,infoece@iiitd.ac.in,IIITD014
+Computer Science and Engineering,NSUT,19,nsutcse@nsut.com,NSUT001
+Computer Science and Engineering,DTU,24,infocse@dtu.co.in,DTU001
+Computer Science and Engineering,LPU,30,infocse@lpu@com,LPU001
+Computer Science and Engineering,AMITYN,29,amityncse@amity.co.in,AMITYN001
+Computer Science and Engineering,AMITYG,29,amitygcse@amity.co.in,AMITYG001
+Computer Science and Engineering,THAPAR,19,thaparcse@thapar.com,THAPAR001
+Computer Science and Engineering,PEC,6,info.peccse@pec@com,PEC001
+Computer Science and Engineering,IITD,39,iitdcse@iitd.in,IITD001
+Computer Science and Engineering,SNU,17,snucse@snu.com,SNU001

@@ -1,0 +1,106 @@
+Student ID,College ID,First_Name,Last_Name,House_No.,"Building,Street,Area",City,State,Country,DOB,Gender,Branch,CGPA,Semester,Email ID,Password
+IIITD2019230,IIITD,Akhilesh,Reddy,A-308,Ashiana Apartments Sector-4 Vaishali,Ghaziabad,Uttar Pradesh,India,2000-08-01,M,Computer Science and Engineering,,4,akhilesh19230@iiitd.ac.in,password
+IIITD2019009,IIITD,Agamdeep,Bains,A-44,"Apex Society,Patparganj",New Delhi,New Delhi,India,1999-09-02,M,Computer Science and Engineering,,4,agamdeep19009@iiitd.ac.in,password
+IIITD2019439,IIITD,Prakriti,Garg,105,"Gokuldham Society,Powder Gali",New Delhi,New Delhi,India,1999-09-29,F,Computer Science and Biology,,4,prakriti19439@iiitd.ac.in,password
+IIITD2019012,IIITD,Akash,Jain,B-65,"Yojna Bhavan, Greater Kailash-1",New Delhi,New Delhi,India,2002-05-06,M,Computer Science and Engineering,,4,akash19012@iiitd.ac.in,password
+IIITD2018234,IIITD,Aatish,Sahai,C-16,"Newhomes,Oak Ridge",Dubai,Dubai,United Arab Emirates,1999-04-27,M,Computer Science and Social Science,,6,aatish18234@iiitd.ac.in,password
+IIITD2019001,IIITD,Gannon,Lyons,56,878-8572 Phasellus Avenue,Agartala,Tripura,India,2000-11-14,M,Computer Science and Design,,4,gannon19001@iiitd.ac.in,password
+IIITD2019002,IIITD,Lynn,Mercado,B-12,"P.O. Box 699, 4929 Sit Rd.",Veraval,Gujarat,India,2002-02-08,M,Computer Science and Engineering,,4,lynn19002@iiitd.ac.in,password
+IIITD2019003,IIITD,Teagan,Snyder,A-14,Ap #917-8995 Sapien. Avenue,Shimla,Himachal Pradesh,India,1999-09-02,F,Computer Science and Biology,,4,teagan19003@iiitd.ac.in,password
+IIITD2019004,IIITD,Ryan,Conrad,C-17,"851-6042 Non, Road",Sonipat,Haryana,India,2000-10-29,M,Computer Science and Mathematics,,4,ryan19004@iiitd.ac.in,password
+IIITD2019005,IIITD,Jolie,Duran,135,"P.O. Box 687, 754 Egestas Av.",Bhatinda,Punjab,India,2002-02-28,F,Computer Science and Engineering,,4,jolie19005@iiitd.ac.in,password
+IIITD2019006,IIITD,Phoebe,Knox,A-101,"P.O. Box 187, 8785 Vestibulum Rd.",Sialkot,Punjab,India,2000-12-22,F,Computer Science and Mathematics,,4,phoebe19006@iiitd.ac.in,password
+IIITD2019007,IIITD,Baker,Campos,803,258-2245 Consequat Av.,Srinagar,Jammu and Kashmir,India,2001-12-07,M,Computer Science and Social Science,,4,baker19007@iiitd.ac.in,password
+IIITD2019008,IIITD,Bo,Kinney,E-6,Ap #709-7135 Turpis Rd.,Hapur,Uttar Pradesh,India,2001-05-23,F,Computer Science and Engineering,,4,bo19008@iiitd.ac.in,password
+IIITD2019010,IIITD,Wylie,Holden,24,101-157 Purus Ave,Mandya,Karnataka,India,1999-09-16,M,Computer Science and Mathematics,,4,wylie19010@iiitd.ac.in,password
+IIITD2019011,IIITD,Oleg,Thornton,8,"P.O. Box 848, 5492 Urna Av.",Midnapore,West Bengal,India,2001-11-17,M,Computer Science and Biology,,4,oleg19011@iiitd.ac.in,password
+IIITD2019013,IIITD,Miranda,Padilla,D-566,864-5684 Ante. St.,Haridwar,Uttarakhand,India,1999-09-29,F,Computer Science and Mathematics,,4,miranda19013@iiitd.ac.in,password
+IIITD2019014,IIITD,Salvador,Mcintyre,102,"806-4773 A, St.",Silvassa,Dadra and Nagar Haveli,India,1999-08-06,M,Computer Science and Engineering,,4,salvador19014@iiitd.ac.in,password
+IIITD2019015,IIITD,Helen,Bowman,80,Ap #957-3010 Nibh Av.,Korba,Chhattisgarh,India,2001-12-28,F,Computer Science and Social Science,,4,holden19015@iiitd.ac.in,password
+IIITD2019016,IIITD,Jonas,Gregory,E-56,"Ap #806-551 Non, Avenue",Srinagar,Jammu and Kashmir,India,1999-04-27,M,Computer Science and Social Science,,4,jonas19016@iiitd.ac.in,password
+IIITD2019017,IIITD,Talon,Gaines,E-8,252-9010 Pellentesque. Rd.,Muzaffargarh,Punjab,India,2002-05-04,M,Computer Science and Engineering,,4,talon19017@iiitd.ac.in,password
+IIITD2019018,IIITD,Rama,Sheppard,71,4881 Adipiscing Avenue,Bhagalpur,Bihar,India,1999-01-13,M,Electronics and Communication,,4,rama19018@iiitd.ac.in,password
+IIITD2019019,IIITD,Anthony,Castro,H/8,"P.O. Box 202, 763 Commodo Avenue",Chandigarh,Chandigarh,India,2001-08-07,M,Computer Science and Biology,,4,anthony19019@iiitd.ac.in,password
+IIITD2019020,IIITD,Brenden,Ballard,8/65,3190 Sollicitudin Ave,Chandigarh,Chandigarh,India,1999-07-10,M,Computer Science and Engineering,,4,brenden19020@iiitd.ac.in,password
+IIITD2019021,IIITD,Jared,Morrow,33,"P.O. Box 418, 6898 Sed St.",Mangalore,Karnataka,India,2002-07-07,M,Computer Science and Engineering,,4,jared19021@iiitd.ac.in,password
+IIITD2019022,IIITD,Jane,Rowe,25B,745-1198 Nunc Street,Tuticorin,Tamil Nadu,India,2002-05-06,F,Computer Science and Artificial Intelligence,,4,jane19022@iiitd.ac.in,password
+IIITD2019023,IIITD,Sopoline,Woodward,654,"8407 Ullamcorper, Road",Shillong,Meghalaya,India,2000-05-13,F,Computer Science and Biology,,4,sopoline19023@iiitd.ac.in,password
+IIITD2019024,IIITD,Delilah,Herrera,H97,"P.O. Box 578, 6243 Commodo St.",Nagaon,Assam,India,1999-05-12,F,Electronics and Communication,,4,delilah19024@iiitd.ac.in,password
+IIITD2019025,IIITD,Quincy,Nieves,H689,Ap #552-5287 Odio St.,Gangtok,Sikkim,India,2000-06-10,F,Computer Science and Engineering,,4,quincy19025@iiitd.ac.in,password
+IIITD2019026,IIITD,Colby,Jacobs,9,6665 In Ave,Hazaribag,Jharkhand,India,1999-10-11,M,Computer Science and Artificial Intelligence,,4,colby19026@iiitd.ac.in,password
+IIITD2019027,IIITD,Michelle,Stephens,B7,"P.O. Box 520, 8798 Vestibulum Rd.",Karnal,Haryana,India,2001-11-18,F,Computer Science and Design,,4,michelle19027@iiitd.ac.in,password
+IIITD2019028,IIITD,Linus,Velasquez,A/90,Ap #387-7568 Leo. Avenue,Nagarcoil,Tamil Nadu,India,1999-02-17,M,Computer Science and Engineering,,4,linus19028@iiitd.ac.in,password
+IIITD2019029,IIITD,Upton,Aguirre,A346,Ap #483-4856 Magna Road,Aligarh,Uttar Pradesh,India,2002-12-11,M,Computer Science and Engineering,,4,upton19029@iiitd.ac.in,password
+IIITD2019030,IIITD,Axel,Wagner,6,Ap #898-1438 Neque Av.,Shimla,Himachal Pradesh,India,1999-07-13,M,Electronics and Communication,,4,axel19030@iiitd.ac.in,password
+IIITD2019031,IIITD,Hammett,Keller,P/698,"P.O. Box 429, 4432 Maecenas Rd.",Chandigarh,Chandigarh,India,2002-03-01,M,Computer Science and Engineering,,4,hammett19031@iiitd.ac.in,password
+IIITD2019032,IIITD,Belle,Gilbert,7/87,3477 Est. Road,Agartala,Tripura,India,1999-08-21,F,Computer Science and Mathematics,,4,belle19032@iiitd.ac.in,password
+IIITD2019033,IIITD,Sybil,Shepherd,H/72,612-4957 Curabitur Av.,Tiruvarur,Tamil Nadu,India,2002-11-23,F,Computer Science and Social Science,,4,sybil19033@iiitd.ac.in,password
+IIITD2019034,IIITD,Denton,Bell,H/107,Ap #240-1420 Et St.,Silvassa,Dadra and Nagar Haveli,India,2002-05-17,M,Computer Science and Artificial Intelligence,,4,denton19034@iiitd.ac.in,password
+IIITD2019035,IIITD,Mark,Schmidt,5,159-7526 Ac Avenue,Kavaratti,Lakshadweep,India,2000-01-22,M,Computer Science and Biology,,4,mark19035@iiitd.ac.in,password
+IIITD2019036,IIITD,Lilah,Bailey,F/689,Ap #573-1289 Donec Road,Daman,Daman and Diu,India,2001-08-30,F,Computer Science and Design,,4,lilah19036@iiitd.ac.in,password
+IIITD2019037,IIITD,Leo,Bond,B/76,"P.O. Box 248, 9391 Dolor Road",Agartala,Tripura,India,1999-04-25,M,Computer Science and Artificial Intelligence,,4,leo19037@iiitd.ac.in,password
+IIITD2019038,IIITD,Tyler,Dawson,135,"298-1159 Laoreet, Av.",Panjim,Goa,India,1999-05-19,M,Computer Science and Engineering,,4,tyler19038@iiitd.ac.in,password
+IIITD2019039,IIITD,Tucker,Butler,81,"P.O. Box 689, 3140 Sit Rd.",Silvassa,Dadra and Nagar Haveli,India,1999-08-07,M,Electronics and Communication,,4,tucker19039@iiitd.ac.in,password
+IIITD2019040,IIITD,Caleb,Diaz,90,"P.O. Box 892, 7167 Aenean Road",Aizwal,Mizoram,India,2000-03-16,M,Computer Science and Social Science,,4,caleb19040@iiitd.ac.in,password
+IIITD2019041,IIITD,Thane,Holloway,78H,3658 Ad Ave,Imphal,Manipur,India,2000-07-23,M,Computer Science and Mathematics,,4,thane19041@iiitd.ac.in,password
+IIITD2019042,IIITD,Iona,Lott,6G,5548 Ultricies Av.,Kohima,Nagaland,India,2001-09-05,F,Computer Science and Biology,,4,lona19042@iiitd.ac.in,password
+IIITD2019043,IIITD,Emi,Ruiz,20,891-8140 Enim. St.,Delhi,Delhi,India,2000-05-03,F,Computer Science and Artificial Intelligence,,4,emi19043@iiitd.ac.in,password
+IIITD2019044,IIITD,Ezekiel,Johnston,H9,229-6145 Neque. Ave,Timkur,Karnataka,India,2000-10-12,M,Computer Science and Engineering,,4,ezekiel19044@iiitd.ac.in,password
+IIITD2019045,IIITD,Marvin,Wyatt,D-8,970-6911 Urna. Av.,Sambalpur,Odisha,India,2000-04-04,M,Computer Science and Design,,4,marvin19045@iiitd.ac.in,password
+IIITD2019046,IIITD,Autumn,Waters,1,Ap #516-2970 Lorem Rd.,Silvassa,Dadra and Nagar Haveli,India,1999-09-25,M,Computer Science and Engineering,,4,autumn19046@iiitd.ac.in,password
+IIITD2019047,IIITD,Drew,Robertson,C-79,Ap #982-933 Ac St.,Raigarh,Chhattisgarh,India,1999-12-07,M,Computer Science and Artificial Intelligence,,4,drew19047@iiitd.ac.in,password
+IIITD2019048,IIITD,Jayme,Thomas,A-7,8874 Leo. Rd.,Serampore,West Bengal,India,1999-02-17,M,Electronics and Communication,,4,jayme19048@iiitd.ac.in,password
+IIITD2019049,IIITD,Aubrey,Bass,89,"171-2928 Ac, Avenue",Farrukhabad-cum-Fatehgarh,Uttar Pradesh,India,2002-10-21,F,Computer Science and Social Science,,4,aubrey19049@iiitd.ac.in,password
+IIITD2019050,IIITD,Reed,Goodman,A-08,5516 Congue. Rd.,Silvassa,Dadra and Nagar Haveli,India,2002-12-04,M,Computer Science and Artificial Intelligence,,4,reed19050@iiitd.ac.in,password
+IIITD2019051,IIITD,Oliver,Hendrix,B-89,"P.O. Box 630, 9764 Duis Av.",Jammu,Jammu and Kashmir,India,2001-09-22,M,Computer Science and Engineering,,4,oliver19051@iiitd.ac.in,password
+IIITD2019052,IIITD,Trevor,Brooks,4,6882 Natoque Street,Shimla,Himachal Pradesh,India,2000-06-23,M,Computer Science and Design,,4,trevor19052@iiitd.ac.in,password
+IIITD2019053,IIITD,Sawyer,Cash,A-72,742-4868 Tempor St.,Surat,Gujarat,India,2000-08-22,M,Computer Science and Artificial Intelligence,,4,sawyer19053@iiitd.ac.in,password
+IIITD2019054,IIITD,Fay,Mccormick,B-67,437-8777 At Av.,Kavaratti,Lakshadweep,India,1999-10-09,F,Computer Science and Engineering,,4,fay19054@iiitd.ac.in,password
+IIITD2019055,IIITD,Cairo,Anthony,67-D,Ap #938-8485 Quis Road,Port Blair,Andaman and Nicobar Islands,India,2000-10-17,F,Computer Science and Artificial Intelligence,,4,cairo19055@iiitd.ac.in,password
+IIITD2019056,IIITD,Raphael,Dickson,965,Ap #981-5303 In Street,Kohima,Nagaland,India,1999-12-29,M,Computer Science and Social Science,,4,raphael19056@iiitd.ac.in,password
+IIITD2019057,IIITD,Harlan,Cleveland,867-C,"120-8205 In, Road",Pondicherry,Pondicherry,India,2000-08-26,M,Computer Science and Engineering,,4,harlan19057@iiitd.ac.in,password
+IIITD2019058,IIITD,Price,Shepherd,15-B,"P.O. Box 556, 8683 Dignissim Ave",Kurnool,Andhra Pradesh,India,2000-04-22,F,Electronics and Communication,,4,price19058@iiitd.ac.in,password
+IIITD2019059,IIITD,Marah,Mcfadden,67,897-1422 Interdum Street,Gadag Betigeri,Karnataka,India,2000-06-11,F,Computer Science and Artificial Intelligence,,4,marah19059@iiitd.ac.in,password
+IIITD2019060,IIITD,Bethany,Velasquez,101,"P.O. Box 806, 6571 Sapien. Ave",Shimla,Himachal Pradesh,India,2002-10-19,F,Computer Science and Biology,,4,bethany19060@iiitd.ac.in,password
+IIITD2019061,IIITD,Garth,Davis,B-101,"P.O. Box 144, 509 Eu, St.",Itanagar,Arunachal Pradesh,India,2002-07-19,M,Electronics and Communication,,4,garth19061@iiitd.ac.in,password
+IIITD2019062,IIITD,Macaulay,Soto,C-45,842-7637 Non Road,Shimla,Himachal Pradesh,India,2001-01-24,M,Computer Science and Engineering,,4,macaulay19062@iiitd.ac.in,password
+IIITD2019063,IIITD,Oleg,Pacheco,D-48,"P.O. Box 110, 3191 Integer Ave",Durgapur,West Bengal,India,2002-03-08,M,Computer Science and Artificial Intelligence,,4,oleg19063@iiitd.ac.in,password
+IIITD2019064,IIITD,Matthew,Abbott,189,"P.O. Box 592, 2101 Nibh Ave",Haridwar,Uttarakhand,India,1999-01-28,M,Computer Science and Mathematics,,4,matthew19064@iiitd.ac.in,password
+IIITD2019065,IIITD,Felicia,Mccormick,905,9826 Eu Road,Nagaon,Assam,India,2002-02-10,F,Computer Science and Social Science,,4,felicia19065@iiitd.ac.in,password
+IIITD2019066,IIITD,Frances,Lara,106-C,Ap #961-1693 Adipiscing Street,Delhi,Delhi,India,2000-09-30,F,Computer Science and Biology,,4,frances19066@iiitd.ac.in,password
+IIITD2019067,IIITD,Basil,Silva,102,Ap #672-4605 Nulla Road,Jamshedpur,Jharkhand,India,2001-08-15,M,Computer Science and Engineering,,4,basil19067@iiitd.ac.in,password
+IIITD2019068,IIITD,Laura,Duncan,808-A,Ap #655-1687 Nibh Ave,Chandigarh,Chandigarh,India,2000-03-25,F,Electronics and Communication,,4,laura19068@iiitd.ac.in,password
+IIITD2019069,IIITD,Clarke,Knight,A-82,"P.O. Box 277, 2010 Mauris Av.",Aizwal,Mizoram,India,2001-03-15,M,Computer Science and Mathematics,,4,clarke19069@iiitd.ac.in,password
+IIITD2019070,IIITD,Fitzgerald,Pace,89,"P.O. Box 469, 5988 Nec Rd.",Shimla,Himachal Pradesh,India,2001-07-13,M,Computer Science and Design,,4,fitzgerald19070@iiitd.ac.in,password
+IIITD2019071,IIITD,Fritz,Goodman,B-77,"P.O. Box 730, 989 Egestas. Road",Raigarh,Chhattisgarh,India,2001-09-23,M,Electronics and Communication,,4,fritz19071@iiitd.ac.in,password
+IIITD2019072,IIITD,Macey,Mayo,18,7771 Suspendisse St.,Barddhaman,West Bengal,India,2001-03-15,F,Computer Science and Engineering,,4,macey19072@iiitd.ac.in,password
+IIITD2019073,IIITD,Bethany,Calderon,E657,759-504 Duis Ave,Port Blair,Andaman and Nicobar Islands,India,2002-02-07,F,Computer Science and Biology,,4,bethany19073@iiitd.ac.in,password
+IIITD2019074,IIITD,Wesley,Mckenzie,72,429-7844 Molestie Street,Itanagar,Arunachal Pradesh,India,2000-11-04,F,Computer Science and Mathematics,,4,wesley19074@iiitd.ac.in,password
+IIITD2019075,IIITD,Sybill,Garrett,D767,Ap #287-6421 Nunc Ave,Nagaon,Assam,India,2000-10-07,F,Computer Science and Engineering,,4,sybill19075@iiitd.ac.in,password
+IIITD2019076,IIITD,Moses,Nunez,A86,Ap #175-4581 Cursus Ave,Dindigul,Tamil Nadu,India,2002-09-19,M,Computer Science and Artificial Intelligence,,4,moses19076@iiitd.ac.in,password
+IIITD2019077,IIITD,Kareem,Small,16,716-2944 Faucibus Rd.,Port Blair,Andaman and Nicobar Islands,India,1999-01-16,M,Computer Science and Biology,,4,kareem19077@iiitd.ac.in,password
+IIITD2019078,IIITD,Sopoline,Evans,G97,2623 Proin Street,Damoh,Madhya Pradesh,India,2000-04-29,F,Computer Science and Artificial Intelligence,,4,sopoline19078@iiitd.ac.in,password
+IIITD2019079,IIITD,Sopoline,Key,A7,"P.O. Box 438, 6401 Dapibus Road",Panjim,Goa,India,2001-08-11,F,Computer Science and Engineering,,4,sopoline19079@iiitd.ac.in,password
+IIITD2019080,IIITD,Chaim,Collier,63,887-1848 Donec Rd.,Silvassa,Dadra and Nagar Haveli,India,2002-07-21,M,Computer Science and Design,,4,chaim19080@iiitd.ac.in,password
+IIITD2019081,IIITD,Lana,Monroe,B83,7192 Cras Avenue,Panjim,Goa,India,2000-03-10,F,Computer Science and Biology,,4,lana19081@iiitd.ac.in,password
+IIITD2019082,IIITD,Nolan,Erickson,32,Ap #873-5900 Lorem St.,Silvassa,Dadra and Nagar Haveli,India,1999-04-23,M,Electronics and Communication,,4,nolan19082@iiitd.ac.in,password
+IIITD2019083,IIITD,Nicole,Jarvis,F78,"9980 Nec, Av.",Vizianagaram,Andhra Pradesh,India,2002-10-23,F,Computer Science and Engineering,,4,nicole19083@iiitd.ac.in,password
+IIITD2019084,IIITD,Charde,Chandler,56,881-5973 Ultrices Rd.,Nagaon,Assam,India,2001-04-11,M,Electronics and Communication,,4,charde19084@iiitd.ac.in,password
+IIITD2019085,IIITD,Olga,Spence,G89,"371-1684 Pede, St.",Itanagar,Arunachal Pradesh,India,1999-04-27,F,Computer Science and Artificial Intelligence,,4,olga19085@iiitd.ac.in,password
+IIITD2019086,IIITD,Raymond,Acosta,90,"P.O. Box 385, 9745 At Road",Durg,Chhattisgarh,India,1999-06-18,M,Computer Science and Engineering,,4,raymond19086@iiitd.ac.in,password
+IIITD2019087,IIITD,Ashely,Contreras,195,"Ap #470-8636 Ornare, Rd.",Shillong,Meghalaya,India,2001-07-29,F,Computer Science and Engineering,,4,ashely19087@iiitd.ac.in,password
+IIITD2019088,IIITD,Colleen,Bolton,85A,"P.O. Box 608, 3460 Non St.",Sambalpur,Odisha,India,2002-06-02,M,Computer Science and Mathematics,,4,colleen19088@iiitd.ac.in,password
+IIITD2019089,IIITD,Michelle,Hardy,B-32,1851 Vitae Rd.,Chhindwara,Madhya Pradesh,India,2002-02-11,F,Computer Science and Engineering,,4,michelle19089@iiitd.ac.in,password
+IIITD2019090,IIITD,Macon,Cash,C-19,"P.O. Box 905, 4453 Vel St.",Port Blair,Andaman and Nicobar Islands,India,2001-02-08,M,Electronics and Communication,,4,macon19090@iiitd.ac.in,password
+IIITD2019091,IIITD,Francesca,Sims,A-78,166 Tincidunt Rd.,Unnao,Uttar Pradesh,India,2002-07-04,F,Computer Science and Design,,4,francesca19091@iiitd.ac.in,password
+IIITD2019092,IIITD,Clark,Mosley,10,180-872 Sagittis. Street,Rajkot,Gujarat,India,2001-07-26,M,Computer Science and Engineering,,4,clark19092@iiitd.ac.in,password
+IIITD2019093,IIITD,Buckminster,Vinson,90-B,9073 Feugiat Street,Arrah,Bihar,India,2002-10-25,M,Electronics and Communication,,4,buckminster19093@iiitd.ac.in,password
+IIITD2019094,IIITD,Joy,Christensen,72-A,733-4097 Neque Street,Port Blair,Andaman and Nicobar Islands,India,2000-06-29,M,Computer Science and Social Science,,4,joy19094@iiitd.ac.in,password
+IIITD2019095,IIITD,Noel,Bird,71,Ap #975-3119 Lectus Ave,Silvassa,Dadra and Nagar Haveli,India,2002-03-23,M,Electronics and Communication,,4,noel19095@iiitd.ac.in,password
+IIITD2019096,IIITD,Georgia,Chase,14-C,"Ap #815-1425 Quis, Rd.",Korba,Chhattisgarh,India,2001-02-10,M,Computer Science and Engineering,,4,georgia19096@iiitd.ac.in,password
+IIITD2019097,IIITD,Nomlanga,House,A-24,9952 Sed Ave,Imphal,Manipur,India,2001-10-28,M,Computer Science and Mathematics,,4,nomlanga19097@iiitd.ac.in,password
+IIITD2019098,IIITD,Xander,Holder,605,6374 Sem. Ave,Srinagar,Jammu and Kashmir,India,1999-12-10,M,Computer Science and Social Science,,4,xander19098@iiitd.ac.in,password
+IIITD2019099,IIITD,Petra,Hood,H-14,215-3626 Curabitur Road,Kohima,Nagaland,India,1999-10-25,F,Computer Science and Design,,4,petra19099@iiitd.ac.in,password
+IIITD2019100,IIITD,Hannah,Hoover,86,"P.O. Box 159, 288 Ridiculus St.",Delhi,Delhi,India,2002-07-19,F,Electronics and Communication,,4,hannah19100@iiitd.ac.in,password
+IIITD2019101,IIITD,Marcia,Dominguez,156,"P.O. Box 594, 2933 Lectus. St.",Gandhidham,Gujarat,India,2001-01-02,F,Computer Science and Engineering,,4,marcia19101@iiitd.ac.in,password
+IIITD2019102,IIITD,Octavius,Maxwell,A-78,2477 Varius Rd.,Agartala,Tripura,India,2000-05-02,M,Computer Science and Design,,4,octavius19102@iiitd.ac.in,password
