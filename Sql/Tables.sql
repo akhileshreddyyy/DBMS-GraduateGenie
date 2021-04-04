@@ -147,3 +147,15 @@ CREATE TABLE `Grade` (
   CONSTRAINT `StudentID_Grade` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS `Studies`;
+CREATE TABLE `Studies` (
+  `CourseID` varchar(19) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `StudentID` varchar(13) NOT NULL,
+  PRIMARY KEY (`CourseID`,`CollegeID`,`StudentID`),
+  KEY `CollegeID_Studies_idx` (`CollegeID`),
+  KEY `StudentID_Studies_idx` (`StudentID`),
+  CONSTRAINT `CollegeID_Studies` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CourseID_Studies` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `StudentID_Studies` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
