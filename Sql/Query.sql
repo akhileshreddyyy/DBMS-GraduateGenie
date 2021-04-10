@@ -100,3 +100,60 @@ List students when CollegeID is known
 SELECT Student.StudentID,CONCAT(Student.First_Name," ",Student.Last_Name) AS FullName
 FROM Student
 WHERE Student.CollegeID="IIITD";
+
+
+/*
+Company query
+Display details of the colleges which have more than 20 number of courses and their average package>=15 LPA and placement %age>=90
+*/
+Select college.CollegeID, college.Name, placement.Year, count(course.CollegeID)
+from college, placement, course
+where college.CollegeID=placement.CollegeID and placement.AveragePackage>=15 
+and placement.PlacementPercentage>=90 and college.CollegeID=course.CollegeID
+group by course.CollegeID
+having count(course.courseID)>20;
+
+
+/*
+College query
+Display companies that have hired students from their college
+*/
+SELECT company.companyID, count(job_offered.student_StudentID)
+from company, job_offered
+where job_offered.student_StudentID like 'IIITD%' and job_offered.status='hired'
+and company.CompanyID=job_offered.company_CompanyID
+group by company.CompanyID;
+
+
+/*
+Faculty query
+View the details of the courses they are teaching
+*/
+select teaches.course_CourseID, course.Name, course.Type, course.Description
+from teaches, course
+where teaches.faculty_FacultyID='IIITD002' 
+and teaches.course_CourseID=course.CourseID;
+
+
+/*
+Company query
+View the details of the students of a particular college who have CGPA>=8
+*/
+select student.StudentID, student.First_Name, student.Last_Name, AVG(Grade.Grade) 'CGPA'
+from grade, student
+where student.StudentID=grade.StudentID and grade.CollegeID='IIITD'
+group by student.StudentID
+having AVG(Grade.Grade)>=8;
+
+
+/*
+College query
+Display the details of the students of their college who have declined the job offer
+*/
+select job_offered.student_StudentID, student.First_Name, student.Last_Name, job_offered.company_companyID
+from job_offered,student
+where job_offered.student_StudentID=student.StudentID and job_offered.status='Declined'
+and job_offered.student_StudentID like 'IIITD%';
+
+
+
