@@ -1,353 +1,207 @@
--- MySQL Workbench Forward Engineering
-
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
-
--- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
--- -----------------------------------------------------
--- Schema graduategenie
--- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema graduategenie
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `graduategenie` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `graduategenie` ;
-
--- -----------------------------------------------------
--- Table `graduategenie`.`administration`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`administration` (
-  `AdminID` VARCHAR(10) NOT NULL,
-  `Password` VARCHAR(20) NOT NULL,
-  `First_Name` VARCHAR(100) NOT NULL,
-  `Last_Name` VARCHAR(100) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
+DROP DATABASE IF EXISTS `GraduateGenie`;
+CREATE DATABASE `GraduateGenie` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE GraduateGenie;
+DROP TABLE IF EXISTS `Administration`;
+CREATE TABLE `Administration` (
+  `AdminID` varchar(10) NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  `First_Name` varchar(100) NOT NULL,
+  `Last_Name` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
   PRIMARY KEY (`AdminID`),
-  UNIQUE INDEX `AdminID_UNIQUE` (`AdminID` ASC) VISIBLE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+  UNIQUE KEY `AdminID_UNIQUE` (`AdminID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
--- -----------------------------------------------------
--- Table `graduategenie`.`college`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`college` (
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `Name` VARCHAR(100) NOT NULL,
-  `Building,Street,Area` VARCHAR(500) NOT NULL,
-  `City` VARCHAR(100) NOT NULL,
-  `State` VARCHAR(100) NOT NULL,
-  `Country` VARCHAR(100) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
-  `Director` VARCHAR(100) NOT NULL,
-  `Password` VARCHAR(20) NOT NULL,
+DROP TABLE IF EXISTS `College`;
+CREATE TABLE `College` (
+  `CollegeID` varchar(10) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Building,Street,Area` varchar(500) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) NOT NULL,
+  `Country` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Director` varchar(100) NOT NULL,
+  `Password` varchar(20) NOT NULL,
   PRIMARY KEY (`CollegeID`),
-  UNIQUE INDEX `CollegeID_UNIQUE` (`CollegeID` ASC) VISIBLE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+  UNIQUE KEY `CollegeID_UNIQUE` (`CollegeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
--- -----------------------------------------------------
--- Table `graduategenie`.`company`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`company` (
-  `CompanyID` VARCHAR(10) NOT NULL,
-  `Name` VARCHAR(100) NOT NULL,
-  `Type` VARCHAR(100) NOT NULL,
-  `Description` MEDIUMTEXT NOT NULL,
-  `Password` VARCHAR(20) NOT NULL,
-  `Building,Street,Area` VARCHAR(500) NOT NULL,
-  `City` VARCHAR(100) NOT NULL,
-  `State` VARCHAR(100) NOT NULL,
-  `Country` VARCHAR(100) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
+DROP TABLE IF EXISTS `Company`;
+CREATE TABLE `Company` (
+  `CompanyID` varchar(10) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Type` varchar(100) NOT NULL,
+  `Description` mediumtext NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  `Building,Street,Area` varchar(500) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) NOT NULL,
+  `Country` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
   PRIMARY KEY (`CompanyID`),
-  UNIQUE INDEX `CompanyID_UNIQUE` (`CompanyID` ASC) VISIBLE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+  UNIQUE KEY `CompanyID_UNIQUE` (`CompanyID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
--- -----------------------------------------------------
--- Table `graduategenie`.`course`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`course` (
-  `CourseID` VARCHAR(10) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `Name` VARCHAR(100) NOT NULL,
-  `Type` VARCHAR(100) NOT NULL,
-  `Description` MEDIUMTEXT NOT NULL,
-  `Credits` INT UNSIGNED NOT NULL,
-  `Semester` VARCHAR(20) NOT NULL,
-  PRIMARY KEY (`CourseID`, `CollegeID`),
-  INDEX `CollegeID_Course_idx` (`CollegeID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_Course`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `graduategenie`.`faculty`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`faculty` (
-  `FacultyID` VARCHAR(10) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `First_Name` VARCHAR(100) NOT NULL,
-  `Second_Name` VARCHAR(100) NOT NULL,
-  `HouseNumber` VARCHAR(20) NOT NULL,
-  `Building,Street,Area` VARCHAR(500) NOT NULL,
-  `City` VARCHAR(100) NOT NULL,
-  `State` VARCHAR(100) NOT NULL,
-  `Country` VARCHAR(100) NOT NULL,
-  `DOB` DATE NOT NULL,
-  `Gender` CHAR(1) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
-  `Specialization` VARCHAR(200) NULL DEFAULT NULL,
-  `Position` VARCHAR(100) NOT NULL,
-  `Experience` INT UNSIGNED NOT NULL,
-  `Password` VARCHAR(20) NOT NULL,
-  PRIMARY KEY (`FacultyID`),
-  UNIQUE INDEX `FacultyID_UNIQUE` (`FacultyID` ASC) VISIBLE,
-  INDEX `CollegeID_Faculty_idx` (`CollegeID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_Faculty`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `graduategenie`.`facultydepartment`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`facultydepartment` (
-  `Name` VARCHAR(100) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `Email` VARCHAR(100) NOT NULL,
-  `HODID` VARCHAR(10) NOT NULL,
-  PRIMARY KEY (`Name`, `CollegeID`),
-  INDEX `CollegeID_FacultyDepartment_idx` (`CollegeID` ASC) VISIBLE,
-  INDEX `HODID_FacultyDepartment_idx` (`HODID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_FacultyDepartment`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `HODID_FacultyDepartment`
-    FOREIGN KEY (`HODID`)
-    REFERENCES `graduategenie`.`faculty` (`FacultyID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `graduategenie`.`student`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`student` (
-  `StudentID` VARCHAR(13) NOT NULL,
-  `First_Name` VARCHAR(100) NOT NULL,
-  `Last_Name` VARCHAR(100) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `House Number` VARCHAR(20) NOT NULL,
-  `Building,Street,Area` VARCHAR(500) NOT NULL,
-  `City` VARCHAR(100) NOT NULL,
-  `State` VARCHAR(100) NOT NULL,
-  `Country` VARCHAR(100) NOT NULL,
-  `DOB` DATE NOT NULL,
-  `Gender` CHAR(1) NOT NULL,
-  `Branch` VARCHAR(100) NOT NULL,
-  `CGPA` FLOAT NULL DEFAULT NULL,
-  `Semester` INT UNSIGNED NULL DEFAULT NULL,
-  `Email` VARCHAR(100) NOT NULL,
-  `Password` VARCHAR(20) NOT NULL,
+DROP TABLE IF EXISTS `Student`;
+CREATE TABLE `Student` (
+  `StudentID` varchar(13) NOT NULL,
+  `First_Name` varchar(100) NOT NULL,
+  `Last_Name` varchar(100) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `House Number` varchar(20) NOT NULL,
+  `Building,Street,Area` varchar(500) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) NOT NULL,
+  `Country` varchar(100) NOT NULL,
+  `DOB` date NOT NULL,
+  `Gender` char(1) NOT NULL,
+  `Branch` varchar(100) NOT NULL,
+  `CGPA` float DEFAULT NULL,
+  `Semester` int unsigned DEFAULT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Password` varchar(20) NOT NULL,
   PRIMARY KEY (`StudentID`),
-  UNIQUE INDEX `StudentID_UNIQUE` (`StudentID` ASC) VISIBLE,
-  INDEX `CollegeID_Student_idx` (`CollegeID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_Student`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+  UNIQUE KEY `StudentID_UNIQUE` (`StudentID`),
+  KEY `CollegeID_Student_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Student` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS `Course`;
+CREATE TABLE `Course` (
+  `CourseID` varchar(10) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Type` varchar(100) NOT NULL,
+  `Description` mediumtext NOT NULL,
+  `Credits` int unsigned NOT NULL,
+  `Semester` varchar(20) NOT NULL,
+  PRIMARY KEY (`CourseID`,`CollegeID`),
+  KEY `CollegeID_Course_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Course` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- -----------------------------------------------------
--- Table `graduategenie`.`grade`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`grade` (
-  `StudentID` VARCHAR(13) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `CourseID` VARCHAR(10) NOT NULL,
-  `Semester` INT UNSIGNED NOT NULL,
-  `Grade` FLOAT NULL DEFAULT NULL,
-  PRIMARY KEY (`StudentID`, `CollegeID`, `CourseID`),
-  INDEX `CourseID_Grade_idx` (`CourseID` ASC) VISIBLE,
-  INDEX `CollegeID_Grade_idx` (`CollegeID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_Grade`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`student` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `CourseID_Grade`
-    FOREIGN KEY (`CourseID`)
-    REFERENCES `graduategenie`.`course` (`CourseID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `StudentID_Grade`
-    FOREIGN KEY (`StudentID`)
-    REFERENCES `graduategenie`.`student` (`StudentID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `Faculty`;
+CREATE TABLE `Faculty` (
+  `FacultyID` varchar(10) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `First_Name` varchar(100) NOT NULL,
+  `Second_Name` varchar(100) NOT NULL,
+  `HouseNumber` varchar(20) NOT NULL,
+  `Building,Street,Area` varchar(500) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) NOT NULL,
+  `Country` varchar(100) NOT NULL,
+  `DOB` date NOT NULL,
+  `Gender` char(1) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Specialization` varchar(200) DEFAULT NULL,
+  `Position` varchar(100) NOT NULL,
+  `Experience` int unsigned NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  PRIMARY KEY (`FacultyID`),
+  UNIQUE KEY `FacultyID_UNIQUE` (`FacultyID`),
+  KEY `CollegeID_Faculty_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Faculty` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS `Placement`;
+CREATE TABLE `Placement` (
+  `CollegeID` varchar(10) NOT NULL,
+  `Year` int unsigned NOT NULL,
+  `Total Offers` int NOT NULL,
+  `StudentsRegistered` int unsigned NOT NULL,
+  `PlacementPercentage` float NOT NULL,
+  `CompaniesVisited` int unsigned NOT NULL,
+  `AveragePackage` float unsigned NOT NULL,
+  PRIMARY KEY (`CollegeID`,`Year`),
+  CONSTRAINT `CollegeID_Placement` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- -----------------------------------------------------
--- Table `graduategenie`.`placement`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`placement` (
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `Year` INT UNSIGNED NOT NULL,
-  `Total Offers` INT NOT NULL,
-  `StudentsRegistered` INT UNSIGNED NOT NULL,
-  `PlacementPercentage` FLOAT NOT NULL,
-  `CompaniesVisited` INT UNSIGNED NOT NULL,
-  `AveragePackage` FLOAT UNSIGNED NOT NULL,
-  PRIMARY KEY (`CollegeID`, `Year`),
-  CONSTRAINT `CollegeID_Placement`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `FacultyDepartment`;
+CREATE TABLE `FacultyDepartment` (
+  `Name` varchar(100) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `HODID` varchar(10) NOT NULL,
+  PRIMARY KEY (`Name`,`CollegeID`),
+  KEY `CollegeID_FacultyDepartment_idx` (`CollegeID`),
+  KEY `HODID_FacultyDepartment_idx` (`HODID`),
+  CONSTRAINT `CollegeID_FacultyDepartment` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `HODID_FacultyDepartment` FOREIGN KEY (`HODID`) REFERENCES `Faculty` (`FacultyID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS `Grade`;
+CREATE TABLE `Grade` (
+  `StudentID` varchar(13) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `CourseID` varchar(10) NOT NULL,
+  `Semester` int unsigned NOT NULL,
+  `Grade` float DEFAULT NULL,
+  PRIMARY KEY (`StudentID`,`CollegeID`,`CourseID`),
+  KEY `CourseID_Grade_idx` (`CourseID`),
+  KEY `CollegeID_Grade_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Grade` FOREIGN KEY (`CollegeID`) REFERENCES `Student` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CourseID_Grade` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `StudentID_Grade` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- -----------------------------------------------------
--- Table `graduategenie`.`studies`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`studies` (
-  `CourseID` VARCHAR(19) NOT NULL,
-  `CollegeID` VARCHAR(10) NOT NULL,
-  `StudentID` VARCHAR(13) NOT NULL,
-  PRIMARY KEY (`CourseID`, `CollegeID`, `StudentID`),
-  INDEX `CollegeID_Studies_idx` (`CollegeID` ASC) VISIBLE,
-  INDEX `StudentID_Studies_idx` (`StudentID` ASC) VISIBLE,
-  CONSTRAINT `CollegeID_Studies`
-    FOREIGN KEY (`CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `CourseID_Studies`
-    FOREIGN KEY (`CourseID`)
-    REFERENCES `graduategenie`.`course` (`CourseID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `StudentID_Studies`
-    FOREIGN KEY (`StudentID`)
-    REFERENCES `graduategenie`.`student` (`StudentID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `Studies`;
+CREATE TABLE `Studies` (
+  `CourseID` varchar(19) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `StudentID` varchar(13) NOT NULL,
+  PRIMARY KEY (`CourseID`,`CollegeID`,`StudentID`),
+  KEY `CollegeID_Studies_idx` (`CollegeID`),
+  KEY `StudentID_Studies_idx` (`StudentID`),
+  CONSTRAINT `CollegeID_Studies` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CourseID_Studies` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `StudentID_Studies` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS 'Teaches';
+CREATE TABLE `Teaches` (
+  `CourseID` varchar(10) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  `FacultyID` varchar(10) NOT NULL,
+  PRIMARY KEY (`CourseID`,`CollegeID`,`FacultyID`),
+  KEY `CollegeID_Teaches_idx` (`CollegeID`),
+  KEY `FacultyID_Teaches_idx` (`FacultyID`),
+  CONSTRAINT `CollegeID_Teaches` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CourseID_Teaches` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FacultyID_Teaches` FOREIGN KEY (`FacultyID`) REFERENCES `Faculty` (`FacultyID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- -----------------------------------------------------
--- Table `graduategenie`.`job_offered`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`job_offered` (
-  `company_CompanyID` VARCHAR(10) NOT NULL,
-  `student_StudentID` VARCHAR(13) NOT NULL,
-  `status` VARCHAR(45) NULL,
-  `description` VARCHAR(45) NULL,
-  PRIMARY KEY (`company_CompanyID`, `student_StudentID`),
-  INDEX `fk_company_has_student_student1_idx` (`student_StudentID` ASC) VISIBLE,
-  INDEX `fk_company_has_student_company1_idx` (`company_CompanyID` ASC) VISIBLE,
-  CONSTRAINT `fk_company_has_student_company1`
-    FOREIGN KEY (`company_CompanyID`)
-    REFERENCES `graduategenie`.`company` (`CompanyID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_company_has_student_student1`
-    FOREIGN KEY (`student_StudentID`)
-    REFERENCES `graduategenie`.`student` (`StudentID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS 'Visits';
+CREATE TABLE `Visits` (
+  `CompanyID` varchar(10) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  PRIMARY KEY (`CompanyID`,`CollegeID`),
+  KEY `CollegeID_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Visits` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CompanyID_Visits` FOREIGN KEY (`CompanyID`) REFERENCES `Company` (`CompanyID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS 'Job_Offer';
+CREATE TABLE `Job_Offer` (
+  `CompanyID` varchar(10) NOT NULL,
+  `StudentID` varchar(13) NOT NULL,
+  `Status` varchar(20) NOT NULL,
+  PRIMARY KEY (`CompanyID`,`StudentID`),
+  KEY `StudentID_Job_Offer_idx` (`StudentID`),
+  CONSTRAINT `CompanyID_Job_Offer` FOREIGN KEY (`CompanyID`) REFERENCES `Company` (`CompanyID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `StudentID_Job_Offer` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- -----------------------------------------------------
--- Table `graduategenie`.`teaches`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`teaches` (
-  `course_CourseID` VARCHAR(10) NOT NULL,
-  `course_CollegeID` VARCHAR(10) NOT NULL,
-  `faculty_FacultyID` VARCHAR(10) NOT NULL,
-  PRIMARY KEY (`course_CourseID`, `course_CollegeID`, `faculty_FacultyID`),
-  INDEX `fk_course_has_faculty_faculty1_idx` (`faculty_FacultyID` ASC) VISIBLE,
-  INDEX `fk_course_has_faculty_course1_idx` (`course_CourseID` ASC, `course_CollegeID` ASC) VISIBLE,
-  CONSTRAINT `fk_course_has_faculty_course1`
-    FOREIGN KEY (`course_CourseID` , `course_CollegeID`)
-    REFERENCES `graduategenie`.`course` (`CourseID` , `CollegeID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_course_has_faculty_faculty1`
-    FOREIGN KEY (`faculty_FacultyID`)
-    REFERENCES `graduategenie`.`faculty` (`FacultyID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `graduategenie`.`visits`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graduategenie`.`visits` (
-  `college_CollegeID` VARCHAR(10) NOT NULL,
-  `company_CompanyID` VARCHAR(10) NOT NULL,
-  PRIMARY KEY (`college_CollegeID`, `company_CompanyID`),
-  INDEX `fk_college_has_company_company1_idx` (`company_CompanyID` ASC) VISIBLE,
-  INDEX `fk_college_has_company_college1_idx` (`college_CollegeID` ASC) VISIBLE,
-  CONSTRAINT `fk_college_has_company_college1`
-    FOREIGN KEY (`college_CollegeID`)
-    REFERENCES `graduategenie`.`college` (`CollegeID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_college_has_company_company1`
-    FOREIGN KEY (`company_CompanyID`)
-    REFERENCES `graduategenie`.`company` (`CompanyID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+DROP TABLE IF EXISTS 'Course_Offer';
+CREATE TABLE `Course_Offer` (
+  `FacultyDeptName` varchar(100) NOT NULL,
+  `CourseID` varchar(10) NOT NULL,
+  `CollegeID` varchar(10) NOT NULL,
+  PRIMARY KEY (`FacultyDeptName`,`CourseID`,`CollegeID`),
+  KEY `CourseID_Course_Offer_idx` (`CourseID`),
+  KEY `CollegeID_Course_Offer_idx` (`CollegeID`),
+  CONSTRAINT `CollegeID_Course_Offer` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `CourseID_Course_Offer` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FacultyDept_Course_Offer` FOREIGN KEY (`FacultyDeptName`) REFERENCES `FacultyDepartment` (`Name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
