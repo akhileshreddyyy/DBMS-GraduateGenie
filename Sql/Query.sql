@@ -56,24 +56,15 @@ INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 
 /*
-FACULTY QUERY
-Know Courses taught when FacultyID is known
-*/
-SELECT Course.CourseID,Course.Name
-FROM Faculty INNER JOIN Course
-ON Faculty.FacultyID=Course.FacultyID
-WHERE Faculty.FacultyID="IIITD001";
 
-/*
 FACULTY QUERY
 Know which students are enrolled in their courses when FacultyID is known
 */
-SELECT Course.CourseID,Course.Name,Student.StudentID,CONCAT(Student.First_Name," ",Student.Last_Name) AS FullName
-FROM Faculty,Course,Studies,Student
-WHERE Faculty.FacultyID=Course.FacultyID
-AND Course.CourseID=Studies.CourseID
-AND Studies.StudentID=Student.StudentID
-AND Faculty.FacultyID="IIITD001";
+SELECT CONCAT(Student.First_Name," ",Student.Last_Name) AS FullName, 
+FROM Studies 
+INNER JOIN Student
+ON Student.StudentID=Studies.StudentID
+WHERE Course.CourseID="IIITD001" AND Course.CollegeID="IIITD"
 
 /*
 FACULTY QUERY

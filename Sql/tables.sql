@@ -1,6 +1,21 @@
+DROP USER IF EXISTS 'OutsiderUser'@'localhost';
+DROP USER IF EXISTS 'StudentUser'@'localhost';
+DROP USER IF EXISTS 'FacultyUser'@'localhost';
+DROP USER IF EXISTS 'CollegeUser'@'localhost';
+DROP USER IF EXISTS 'CompanyUser'@'localhost';
+DROP USER IF EXISTS 'AdminUser'@'localhost';
+
+CREATE USER 'OutsiderUser'@'localhost' IDENTIFIED BY 'GGOutsider';
+CREATE USER 'StudentUser'@'localhost' IDENTIFIED BY 'GGStudent';
+CREATE USER 'FacultyUser'@'localhost' IDENTIFIED BY 'GGFaculty';
+CREATE USER 'CollegeUser'@'localhost' IDENTIFIED BY 'GGCollege';
+CREATE USER 'CompanyUser'@'localhost' IDENTIFIED BY 'GGCompany';
+CREATE USER 'AdminUser'@'localhost' IDENTIFIED BY 'GGAdmin';
+
 DROP DATABASE IF EXISTS `GraduateGenie`;
 CREATE DATABASE `GraduateGenie` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE GraduateGenie;
+
 DROP TABLE IF EXISTS `Administration`;
 CREATE TABLE `Administration` (
   `AdminID` varchar(10) NOT NULL,
@@ -49,7 +64,7 @@ CREATE TABLE `Student` (
   `First_Name` varchar(100) NOT NULL,
   `Last_Name` varchar(100) NOT NULL,
   `CollegeID` varchar(10) NOT NULL,
-  `House Number` varchar(20) NOT NULL,
+  `HouseNumber` varchar(20) NOT NULL,
   `Building,Street,Area` varchar(500) NOT NULL,
   `City` varchar(100) NOT NULL,
   `State` varchar(100) NOT NULL,
@@ -57,7 +72,6 @@ CREATE TABLE `Student` (
   `DOB` date NOT NULL,
   `Gender` char(1) NOT NULL,
   `Branch` varchar(100) NOT NULL,
-  `CGPA` float DEFAULT NULL,
   `Semester` int unsigned DEFAULT NULL,
   `Email` varchar(100) NOT NULL,
   `Password` varchar(20) NOT NULL,
@@ -86,7 +100,7 @@ CREATE TABLE `Faculty` (
   `FacultyID` varchar(10) NOT NULL,
   `CollegeID` varchar(10) NOT NULL,
   `First_Name` varchar(100) NOT NULL,
-  `Second_Name` varchar(100) NOT NULL,
+  `Last_Name` varchar(100) NOT NULL,
   `HouseNumber` varchar(20) NOT NULL,
   `Building,Street,Area` varchar(500) NOT NULL,
   `City` varchar(100) NOT NULL,
@@ -95,13 +109,14 @@ CREATE TABLE `Faculty` (
   `DOB` date NOT NULL,
   `Gender` char(1) NOT NULL,
   `Email` varchar(100) NOT NULL,
-  `Specialization` varchar(200) DEFAULT NULL,
   `Position` varchar(100) NOT NULL,
   `Experience` int unsigned NOT NULL,
   `Password` varchar(20) NOT NULL,
+  `FacultyDept` varchar(100) NOT NULL,
   PRIMARY KEY (`FacultyID`),
   UNIQUE KEY `FacultyID_UNIQUE` (`FacultyID`),
   KEY `CollegeID_Faculty_idx` (`CollegeID`),
+  KEY `FacultyDept_Faculty_idx` (`FacultyDept`),
   CONSTRAINT `CollegeID_Faculty` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -109,7 +124,7 @@ DROP TABLE IF EXISTS `Placement`;
 CREATE TABLE `Placement` (
   `CollegeID` varchar(10) NOT NULL,
   `Year` int unsigned NOT NULL,
-  `Total Offers` int NOT NULL,
+  `TotalOffers` int NOT NULL,
   `StudentsRegistered` int unsigned NOT NULL,
   `PlacementPercentage` float NOT NULL,
   `CompaniesVisited` int unsigned NOT NULL,
@@ -159,7 +174,7 @@ CREATE TABLE `Studies` (
   CONSTRAINT `StudentID_Studies` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS 'Teaches';
+DROP TABLE IF EXISTS `Teaches`;
 CREATE TABLE `Teaches` (
   `CourseID` varchar(10) NOT NULL,
   `CollegeID` varchar(10) NOT NULL,
@@ -172,7 +187,7 @@ CREATE TABLE `Teaches` (
   CONSTRAINT `FacultyID_Teaches` FOREIGN KEY (`FacultyID`) REFERENCES `Faculty` (`FacultyID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS 'Visits';
+DROP TABLE IF EXISTS `Visits`;
 CREATE TABLE `Visits` (
   `CompanyID` varchar(10) NOT NULL,
   `CollegeID` varchar(10) NOT NULL,
@@ -182,7 +197,7 @@ CREATE TABLE `Visits` (
   CONSTRAINT `CompanyID_Visits` FOREIGN KEY (`CompanyID`) REFERENCES `Company` (`CompanyID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS 'Job_Offer';
+DROP TABLE IF EXISTS `Job_Offer`;
 CREATE TABLE `Job_Offer` (
   `CompanyID` varchar(10) NOT NULL,
   `StudentID` varchar(13) NOT NULL,
@@ -193,15 +208,68 @@ CREATE TABLE `Job_Offer` (
   CONSTRAINT `StudentID_Job_Offer` FOREIGN KEY (`StudentID`) REFERENCES `Student` (`StudentID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS 'Course_Offer';
-CREATE TABLE `Course_Offer` (
-  `FacultyDeptName` varchar(100) NOT NULL,
-  `CourseID` varchar(10) NOT NULL,
-  `CollegeID` varchar(10) NOT NULL,
-  PRIMARY KEY (`FacultyDeptName`,`CourseID`,`CollegeID`),
-  KEY `CourseID_Course_Offer_idx` (`CourseID`),
-  KEY `CollegeID_Course_Offer_idx` (`CollegeID`),
-  CONSTRAINT `CollegeID_Course_Offer` FOREIGN KEY (`CollegeID`) REFERENCES `College` (`CollegeID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `CourseID_Course_Offer` FOREIGN KEY (`CourseID`) REFERENCES `Course` (`CourseID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `FacultyDept_Course_Offer` FOREIGN KEY (`FacultyDeptName`) REFERENCES `FacultyDepartment` (`Name`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+ALTER TABLE `GraduateGenie`.`Faculty` 
+ADD CONSTRAINT `FacultyDept_Faculty`
+  FOREIGN KEY (`FacultyDept`)
+  REFERENCES `GraduateGenie`.`FacultyDepartment` (`Name`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+GRANT SELECT ON GraduateGenie.Student TO 'OutsiderUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Faculty TO 'OutsiderUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.College TO 'OutsiderUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Company TO 'OutsiderUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Administration TO 'OutsiderUser'@'localhost'; 
+
+GRANT SELECT,UPDATE ON GraduateGenie.Student TO 'StudentUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.College TO 'StudentUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Placement TO 'StudentUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Grade TO 'StudentUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Course TO 'StudentUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Studies TO 'StudentUser'@'localhost'; 
+
+GRANT SELECT,UPDATE ON GraduateGenie.Faculty TO 'FacultyUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Grade TO 'FacultyUser'@'localhost'; 
+GRANT SELECT,UPDATE ON GraduateGenie.Course TO 'FacultyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Studies TO 'FacultyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.College TO 'FacultyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Teaches TO 'FacultyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Student TO 'FacultyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.FacultyDepartment TO 'FacultyUser'@'localhost'; 
+
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.College TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Student TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Faculty TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.FacultyDepartment TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Course TO 'CollegeUser'@'localhost';
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Grade TO 'CollegeUser'@'localhost';  
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Studies TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Teaches TO 'CollegeUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Placement TO 'CollegeUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Visits TO 'CollegeUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Job_Offer TO 'CollegeUser'@'localhost'; 
+
+GRANT SELECT,UPDATE ON GraduateGenie.Company TO 'CompanyUser'@'localhost';
+GRANT SELECT,UPDATE ON GraduateGenie.Job_Offer TO 'CompanyUser'@'localhost';
+GRANT SELECT ON GraduateGenie.Student TO 'CompanyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.College TO 'CompanyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Grade TO 'CompanyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Studies TO 'CompanyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Course TO 'CompanyUser'@'localhost'; 
+GRANT SELECT ON GraduateGenie.Placement TO 'CompanyUser'@'localhost'; 
+
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Administration TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.College TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Student TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Faculty TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.FacultyDepartment TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Course TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Grade TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Placement TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Job_Offer TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Studies TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Teaches TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Visits TO 'AdminUser'@'localhost'; 
+GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Company TO 'AdminUser'@'localhost'; 
+
+
