@@ -277,7 +277,7 @@ CREATE UNIQUE INDEX CollegeIndex ON College (CollegeID);
 CREATE UNIQUE INDEX CompanyIndex ON Company (CompanyID);
 CREATE UNIQUE INDEX CourseIndex ON Course (CollegeID,CourseID);
 CREATE INDEX CourseIndex1 ON Course (Semester);
-CREATE UNIQUE CourseIndex2 ON Course (Type);
+CREATE INDEX CourseIndex2 ON Course (Type);
 CREATE UNIQUE INDEX FacultyIndex ON Faculty (CollegeID,FacultyID);
 CREATE UNIQUE INDEX FacultyDepartmentIndex ON FacultyDepartment (CollegeID,HODID);
 CREATE INDEX GradeIndex ON Grade (StudentID,CourseID);
