@@ -272,4 +272,18 @@ GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Teaches TO 'AdminUser'@'local
 GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Visits TO 'AdminUser'@'localhost'; 
 GRANT SELECT,INSERT,UPDATE,DELETE ON GraduateGenie.Company TO 'AdminUser'@'localhost'; 
 
-
+CREATE UNIQUE INDEX AdministrationIndex ON Administration (AdminID);
+CREATE UNIQUE INDEX CollegeIndex ON College (CollegeID);
+CREATE UNIQUE INDEX CompanyIndex ON Company (CompanyID);
+CREATE UNIQUE INDEX CourseIndex ON Course (CollegeID,CourseID);
+CREATE INDEX CourseIndex1 ON Course (Semester);
+CREATE UNIQUE CourseIndex2 ON Course (Type);
+CREATE UNIQUE INDEX FacultyIndex ON Faculty (CollegeID,FacultyID);
+CREATE UNIQUE INDEX FacultyDepartmentIndex ON FacultyDepartment (CollegeID,HODID);
+CREATE INDEX GradeIndex ON Grade (StudentID,CourseID);
+CREATE INDEX Job_OfferIndex ON Job_Offer (StudentID);
+CREATE INDEX PlacementIndex ON Placement (CollegeID);
+CREATE UNIQUE INDEX StudentIndex ON Student (CollegeID,StudentID);
+CREATE INDEX StudiesIndex ON Studies (CollegeID,CourseID);
+CREATE INDEX TeachesIndex ON Teaches (CollegeID,CourseID);
+CREATE UNIQUE INDEX VisitsIndex ON Visits (CollegeID,CompanyID);
